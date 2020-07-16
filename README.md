@@ -1,9 +1,8 @@
 # portfolio
 My personal website/portfolio.
-Technologies I used:
+Technologies I using:
 
 Front-End:
-
 - HTML
 - CSS
 - Javascript
@@ -12,6 +11,5 @@ Front-End:
   
   
 Back-End:
-
--Python
--Flask
+- Python
+- Flask
