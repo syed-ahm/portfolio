@@ -1,6 +1,6 @@
 # portfolio
 My personal website/portfolio.
-Technologies I using:
+Technologies I'm using:
 
 Front-End:
 - HTML

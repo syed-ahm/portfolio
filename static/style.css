@@ -1,0 +1,19 @@
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+
+html::-webkit-scrollbar {
+    display: none;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: #FF0000;
+}
+
+#resume {
+    background-color: rgb(231, 132, 65);
+}
+

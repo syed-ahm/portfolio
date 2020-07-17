@@ -1,7 +1,7 @@
-<html style ='scroll-behavior: smooth;'>
+<html lang='en'>
     <head>
         <meta charset='utf-8'>
-        <meta name='description' content='Syed Ahmed'>
+        <meta name='description' content="Syed Ahmed's Portfolio.">
         <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
         <title>Home | Syed Ahmed</title>
         <link rel="shortcut icon" href="{{ url_for('static', filename='images/favicon.ico') }}">
@@ -10,17 +10,17 @@
         <link rel='stylesheet' href="{{ url_for('static', filename='style.css') }}">
     </head>
     <body class="text-center">
-        <div id='container' style='overflow: hidden;'>
+        <div id='container'>
             <div id='home' class="d-flex w-100 h-100 mx-auto flex-column bg-primary justify-content-center">
                 
 
                 <div class='animate__animated animate__fadeInDown animate__delay-1s'>
-                    <h1 id='intro1' class='font-weight-light'>Hi, I'm Syed.</h1>        
+                    <h1 id='intro1' class='font-weight-light'>Hi, I'm Syed</h1>        
                 </div>
                 
 
                 <div class='justify-content-center animate__animated animate__fadeInLeft animate__delay-2s'>
-                    <h2 id='intro2' class='font-weight-light'>I like to build things.</h2>
+                    <h2 id='intro2' class='font-weight-light'>I like to build things</h2>
                 </div>
 
 
@@ -29,29 +29,97 @@
                 </div>
 
 
-                <div class='justify-content-end'>
-                    <a href='#projects'><img id='nextButton1' class='img-fluid rounded float-right mr-5 animate__animated animate__bounceInDown animate__delay-5s' src="{{ url_for('static', filename='images/sign3.png') }}" width='50' height="50"></a>
+                <div>
+                    <a href='#aboutme' onclick="document.title = 'About | Syed Ahmed';"><img id='nextButton1' class='img-fluid rounded float-right mr-5 animate__animated animate__bounceInDown animate__delay-5s' src="{{ url_for('static', filename='images/sign3.png') }}" width='50' height="50"></a>
                 </div> 
 
 
             </div>
 
-            <div id='projects' class="d-flex w-100 h-100 mx-auto flex-column bg-light">
-                <h2 class='text-left p-4 font-weight-light'>Projects</h2>
+            <div id='aboutme' class="d-flex w-100 h-100 mx-auto flex-column bg-light">
+                
+                
+                <h2 id='aboutMeScreenHeader' class='text-left pl-2 pt-2 font-weight-light'>Who Am I?</h2>
 
-                <div class=''>
-                    <a href=''><img id='nextButton2' class='img-fluid float-left rounded ml-5' src="{{ url_for('static', filename='images/sign3.png') }}" width='50' height="50"></a>
+
+                <div>
+                    <a href='#home' onclick="document.title = 'Home | Syed Ahmed'"><img id='nextButton2' class='img-fluid float-right rounded mr-3' src="{{ url_for('static', filename='images/sign4.png') }}" width='35' height="35"></a>
                 </div> 
 
+
+                <div class='container w-100 h-100'>
+
+
+                </div>
+
+
+                <div>
+                    <a href='#projects' onclick="document.title = 'Projects | Syed Ahmed'"><img id='nextButton3' class='img-fluid float-left rounded m-3' src="{{ url_for('static', filename='images/sign3.png') }}" width='35' height="35"></a>
+                    <a href='https://www.instagram.com/syedahmedd_/' target='_blank'><img class='' src="{{ url_for('static', filename='images/ig.png') }}"  width='50' height='50'></a>
+                    <a href='' target='_blank'><img class='' src="{{ url_for('static', filename='images/email.png') }}"  width='50' height='50'></a>
+                </div>
+
+
             </div>
+
+
+
+
+            <div id='projects' class='d-flex w-100 h-100 mx-auto flex-column bg-dark'>
+                
+                
+                <h2 id='projectScreenHeader' class='text-left pl-2 pt-2 font-weight-light text-light'>Projects</h2>
+                
+                
+                <div>
+                    <a href='#aboutme' onclick="document.title = 'About | Syed Ahmed'"><img id='nextButton4' class='img-fluid float-right rounded mr-3' src="{{ url_for('static', filename='images/sign4.png') }}" width='35' height="35"></a>
+                </div>
+                
+
+                <div class='container w-100 h-100' >
+
+
+                </div>
+
+
+
+                <div>
+                    <a href='#resume' onclick="document.title = 'Resume | Syed Ahmed'"><img id='nextButton5' class='img-fluid float-left rounded m-3' src="{{ url_for('static', filename='images/sign3.png') }}" width='35' height="35"></a>
+                </div>
+
+
+
+            </div>
+
+            
+            <div id='resume' class='d-flex w-100 h-100 mx-auto flex-column'>
+
+            
+                <h2 id='resumeScreenHeader' class='text-left pl-2 pt-2 font-weight-light'>Resume</h2>
+                
+                
+                <div>
+                    <a href='#projects' onclick="document.title = 'Projects | Syed Ahmed'"><img id='nextButton6' class='img-fluid float-right rounded mr-3' src="{{ url_for('static', filename='images/sign4.png') }}" width='35' height="35"></a>
+                </div>
+
+
+                <div class='container w-100 h-100' >
+
+
+                </div>
+
+
+            </div>
+
 
         </div>
 
 
     
+
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-        <script src="{{ url_for('static', filename='frontend.js') }}" type='text/javascript'></script>
+        <script src="{{ url_for('static', filename='animations.js') }}" type='text/javascript'></script>
     </body>
 </html>
