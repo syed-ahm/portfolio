@@ -1,4 +1,4 @@
-<html lang='en'>
+<html lang='en' id='html'>
     <head>
         <meta charset='utf-8'>
         <meta name='description' content="Syed Ahmed's Portfolio.">
@@ -19,44 +19,70 @@
                 </div>
                 
 
-                <div class='justify-content-center animate__animated animate__fadeInLeft animate__delay-2s'>
+                <div class='animate__animated animate__fadeInLeft animate__delay-2s'>
                     <h2 id='intro2' class='font-weight-light'>I like to build things</h2>
                 </div>
 
 
-                <div class='justify-content-center animate__animated animate__fadeInRight animate__delay-4s'>
+                <div class='animate__animated animate__fadeInRight animate__delay-4s'>
                     <h2 id='intro3' class='font-weight-light'>Take a look around...</h2>
                 </div>
 
 
                 <div>
-                    <a href='#aboutme' onclick="document.title = 'About | Syed Ahmed';"><img id='nextButton1' class='img-fluid rounded float-right mr-5 animate__animated animate__bounceInDown animate__delay-5s' src="{{ url_for('static', filename='images/sign3.png') }}" width='50' height="50"></a>
+                    <a href='#aboutMe' onclick="document.title = 'About | Syed Ahmed';"><img id='nextButton1' class='img-fluid rounded float-right mr-5 animate__animated animate__bounceInDown animate__delay-5s' src="{{ url_for('static', filename='images/sign3.png') }}" width='50' height="50"></a>
                 </div> 
 
 
             </div>
 
-            <div id='aboutme' class="d-flex w-100 h-100 mx-auto flex-column bg-light">
+            <div id='aboutMe' class="w-100 h-100 bg-light">
                 
                 
                 <h2 id='aboutMeScreenHeader' class='text-left pl-2 pt-2 font-weight-light'>Who Am I?</h2>
 
+                
+                <a href='#home' onclick="document.title = 'Home | Syed Ahmed'"><img id='nextButton2' class='img-fluid float-right rounded mr-3' src="{{ url_for('static', filename='images/sign4.png') }}" width='35' height="35"></a>
+                   
 
-                <div>
-                    <a href='#home' onclick="document.title = 'Home | Syed Ahmed'"><img id='nextButton2' class='img-fluid float-right rounded mr-3' src="{{ url_for('static', filename='images/sign4.png') }}" width='35' height="35"></a>
-                </div> 
+                <div id='iconContainer' class='container'>
 
+                    <div class='row'>
+                        <div class='col'>
+                            <a href='https://github.com/syed-ahm' target='_blank'><img class='mb-3' src="{{ url_for('static', filename='images/git.png') }}"  width='25' height='25'></a>
+                        </div>
+                    </div>
+                        
+                    <div class='row'>
+                        <div class='col'>
+                            <a href='https://www.instagram.com/syedahmedd_/' target='_blank'><img class='mb-3' src="{{ url_for('static', filename='images/ig.png') }}"  width='26' height='26'></a>
+                        </div>
+                    </div>
+                    
+                    <div class='row'>
+                        <div class='col'>
+                            <a href="https://www.linkedin.com/in/syed-ahmed-6709021aa/" target='_blank'><img class='mb-3' src="{{ url_for('static', filename='images/linkedin.png') }}" width='24' height='24'></a>
+                        </div>
+                    </div>
 
-                <div class='container w-100 h-100'>
+                    <div class='row'>
+                        <div class='col'>
+                            <a href="contact.html" target='_blank'><img src="{{ url_for('static', filename='images/email.png') }}" width='26' height='26'></a>
+                        </div>
+                    </div>
+            
+                </div>
+                
+
+                <div id='aboutMeParagraph'>
+                    <h4>yo</h4>
 
 
                 </div>
 
 
                 <div>
-                    <a href='#projects' onclick="document.title = 'Projects | Syed Ahmed'"><img id='nextButton3' class='img-fluid float-left rounded m-3' src="{{ url_for('static', filename='images/sign3.png') }}" width='35' height="35"></a>
-                    <a href='https://www.instagram.com/syedahmedd_/' target='_blank'><img class='' src="{{ url_for('static', filename='images/ig.png') }}"  width='50' height='50'></a>
-                    <a href='' target='_blank'><img class='' src="{{ url_for('static', filename='images/email.png') }}"  width='50' height='50'></a>
+                    <a href='#projects' onclick="document.title = 'Projects | Syed Ahmed'"><img id='nextButton3' class='img-fluid rounded m-3' src="{{ url_for('static', filename='images/sign3.png') }}" width='35' height="35"></a>                    
                 </div>
 
 
@@ -65,21 +91,17 @@
 
 
 
-            <div id='projects' class='d-flex w-100 h-100 mx-auto flex-column bg-dark'>
+            <div id='projects' class='w-100 h-100'>
                 
                 
                 <h2 id='projectScreenHeader' class='text-left pl-2 pt-2 font-weight-light text-light'>Projects</h2>
                 
                 
                 <div>
-                    <a href='#aboutme' onclick="document.title = 'About | Syed Ahmed'"><img id='nextButton4' class='img-fluid float-right rounded mr-3' src="{{ url_for('static', filename='images/sign4.png') }}" width='35' height="35"></a>
+                    <a href='#aboutMe' onclick="document.title = 'About | Syed Ahmed'"><img id='nextButton4' class='img-fluid float-right rounded mr-3' src="{{ url_for('static', filename='images/sign4.png') }}" width='35' height="35"></a>
                 </div>
                 
 
-                <div class='container w-100 h-100' >
-
-
-                </div>
 
 
 
@@ -92,7 +114,7 @@
             </div>
 
             
-            <div id='resume' class='d-flex w-100 h-100 mx-auto flex-column'>
+            <div id='resume' class='w-100 h-100'>
 
             
                 <h2 id='resumeScreenHeader' class='text-left pl-2 pt-2 font-weight-light'>Resume</h2>
@@ -103,11 +125,7 @@
                 </div>
 
 
-                <div class='container w-100 h-100' >
-
-
-                </div>
-
+                
 
             </div>
 

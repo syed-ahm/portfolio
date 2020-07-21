@@ -1,7 +1,7 @@
 html {
     scroll-behavior: smooth;
     overflow-x: hidden;
-    overflow-y: scroll;
+    overflow-y: hidden;
     scrollbar-width: none;
 }
 
@@ -9,11 +9,43 @@ html::-webkit-scrollbar {
     display: none;
 }
 
-html::-webkit-scrollbar-thumb {
-    background: #FF0000;
+#aboutMe {
+    position: relative;
+}
+
+#projects {
+    position: relative;
+    background-color: rgb(89, 105, 119);
 }
 
 #resume {
     background-color: rgb(231, 132, 65);
+    position: relative;
+}
+
+#iconContainer {
+    height: 8rem;
+    width: 4rem;
+    position: absolute;
+    top: 40%;
+    left: 0rem;
+}
+
+#aboutMeParagraph {
+    position: absolute;
+    left: 10%;
+    top: 14%;
+}
+
+#nextButton3 {
+    position: absolute;
+    bottom: 0rem;
+    left: 0rem;
+}
+
+#nextButton5 {
+    position: absolute;
+    bottom: 0rem;
+    left: 0rem;
 }
 

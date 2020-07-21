@@ -1,4 +1,4 @@
-// Grabbing arrow image element
+// Grabbing arrow image elements
 var nextButton1 = document.getElementById('nextButton1'),
     nextButton2 = document.getElementById('nextButton2'),
     nextButton3 = document.getElementById('nextButton3'),
@@ -6,9 +6,10 @@ var nextButton1 = document.getElementById('nextButton1'),
     nextButton5 = document.getElementById('nextButton5'),
     nextButton6 = document.getElementById('nextButton6');
 
-// Removes arrow image animation/delay so new animation can be added 
+// Removes arrow image animation/delay so new animation can be added / allows scrolling after mainpage animations
 setTimeout(function() {
     nextButton1.classList.remove('animate__bounceInDown', 'animate__delay-5s');
+    document.getElementById('html').style.overflowY = 'scroll';
 }, 6000)
 
 
@@ -123,6 +124,18 @@ function resumeScreenAnimations() {
         nextButton6.classList.remove('animate__fadeInRight', 'animate__delay-1s');
     }, 2000);
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
