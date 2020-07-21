@@ -37,6 +37,12 @@ html::-webkit-scrollbar {
     top: 14%;
 }
 
+#nextButton2 {
+    position: absolute;
+    top: 0rem;
+    right: 0rem;
+}
+
 #nextButton3 {
     position: absolute;
     bottom: 0rem;
