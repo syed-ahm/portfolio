@@ -11,7 +11,7 @@
     </head>
     <body class="text-center">
         <div id='container'>
-            <div id='home' class="d-flex w-100 h-100 mx-auto flex-column bg-primary justify-content-center">
+            <div id='home' class="d-flex w-100 h-100 flex-column bg-primary justify-content-center">
                 
 
                 <div class='animate__animated animate__fadeInDown animate__delay-1s'>
@@ -48,29 +48,33 @@
                 <div id='iconContainer' class='container'>
 
                     <div class='row'>
-                        <div class='col'>
+                        <div class='col-1'>
                             <a href='https://github.com/syed-ahm' target='_blank'><img class='mb-3' src="{{ url_for('static', filename='images/git.png') }}"  width='25' height='25'></a>
                         </div>
                     </div>
                         
                     <div class='row'>
-                        <div class='col'>
+                        <div class='col-1'>
                             <a href='https://www.instagram.com/syedahmedd_/' target='_blank'><img class='mb-3' src="{{ url_for('static', filename='images/ig.png') }}"  width='26' height='26'></a>
                         </div>
                     </div>
                     
                     <div class='row'>
-                        <div class='col'>
+                        <div class='col-1'>
                             <a href="https://www.linkedin.com/in/syed-ahmed-6709021aa/" target='_blank'><img class='mb-3' src="{{ url_for('static', filename='images/linkedin.png') }}" width='24' height='24'></a>
                         </div>
                     </div>
 
                     <div class='row'>
-                        <div class='col'>
-                            <a href="contact" target='_blank'><img src="{{ url_for('static', filename='images/email.png') }}" width='26' height='26'></a>
+                        <div class='col-1'>
+                            <a href="" target=''><img id='emailButton' src="{{ url_for('static', filename='images/email.png') }}" width='26' height='26'></a>
                         </div>
                     </div>
-            
+                    
+                </div>
+
+                <div id='emailBox' class='rounded bg-success'>
+                    <p>Email Copied!</p> 
                 </div>
                 
 

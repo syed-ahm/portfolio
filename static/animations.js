@@ -128,9 +128,30 @@ function resumeScreenAnimations() {
 
 
 
+// Grabs emailButton, box
+var emailButton = document.getElementById('emailButton'),
+    emailBox = document.getElementById('emailBox');
 
+// my email
+const emailText = 'syed-hamdan@hotmail.com'
 
+// Add emailButton click event listener
+emailButton.addEventListener('click', emailCopyAnimation);
 
+// Selects my email from invisible textbox and copies it to clipboard, then plays noti box animation
+function emailCopyAnimation(event) {
+    // copies text
+    event.preventDefault();
+    navigator.clipboard.writeText(emailText);
+
+    // plays noti animaton
+    emailBox.style.visibility = 'visible';
+    emailBox.classList.add('animate__animated', 'animate__slideInLeft');
+    setTimeout(function() {
+        emailBox.classList.remove('animate__slideInLeft');
+        emailBox.classList.add('animate__fadeOutLeft');
+    }, 1900)
+}
 
 
 
