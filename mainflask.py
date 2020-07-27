@@ -1,4 +1,4 @@
-from flask import Flask, render_template, redirect, url_for
+from flask import Flask, render_template, redirect, url_for, send_file
 
 app = Flask(__name__)
 
@@ -10,9 +10,9 @@ def home():
     return render_template('home.html')
 
 
-@app.route("/contact")
-def contact():
-    return render_template('contact.html')
+@app.route('/resume')
+def resume():
+    return send_file('static/syed_ahmed_RESUME.pdf', attachment_filename='syed_ahmed_RESUME.pdf')
 
 
 # attempt to stop browser caching

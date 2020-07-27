@@ -9,59 +9,71 @@
         <link rel='stylesheet' href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
         <link rel='stylesheet' href="{{ url_for('static', filename='style.css') }}">
     </head>
-    <body class="text-center">
-        <div id='container'>
-            <div id='home' class="d-flex w-100 h-100 flex-column bg-primary justify-content-center">
-                
+    <body>
+
+        <div class='navbarContainer'>
+            <nav class="navbar navbar-expand-sm navbar-light bg-light">
+                <a href="#home" class="navbar-brand">Home</a>
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarMenu">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="resume" target='_blank' class="nav-link">Resume</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <div id='wrapper'>
+            
+            <div id='home' class="d-flex w-100 h-100 flex-column bg-primary text-center justify-content-center">
 
                 <div class='animate__animated animate__fadeInDown animate__delay-1s'>
                     <h1 id='intro1' class='font-weight-light'>Hi, I'm Syed</h1>        
                 </div>
-                
 
                 <div class='animate__animated animate__fadeInLeft animate__delay-2s'>
                     <h2 id='intro2' class='font-weight-light'>I like to build things</h2>
                 </div>
 
-
                 <div class='animate__animated animate__fadeInRight animate__delay-4s'>
                     <h2 id='intro3' class='font-weight-light'>Take a look around...</h2>
                 </div>
 
-
                 <div>
-                    <a href='#aboutMe' onclick="document.title = 'About | Syed Ahmed';"><img id='nextButton1' class='img-fluid rounded float-right mr-5 animate__animated animate__bounceInDown animate__delay-5s' src="{{ url_for('static', filename='images/sign3.png') }}" width='50' height="50"></a>
+                    <a href='#about' onclick="document.title = 'About | Syed Ahmed';"><img id='nextButton1' class='img-fluid rounded float-right mr-5 animate__animated animate__bounceInDown animate__delay-5s' src="{{ url_for('static', filename='images/sign3.png') }}" width='50' height="50"></a>
                 </div> 
 
-
             </div>
+        
 
-            <div id='aboutMe' class="w-100 h-100 bg-light">
-                
-                
-                <h2 id='aboutMeScreenHeader' class='text-left pl-2 pt-2 font-weight-light'>Who Am I?</h2>
+            <div id='about' class="w-100 h-100 bg-light">
 
+
+                <h3 id='aboutHeader' class='text-center font-weight-light'>Who am I?</h3>
                 
-                <a href='#home' onclick="document.title = 'Home | Syed Ahmed'"><img id='nextButton2' class='img-fluid rounded m-3' src="{{ url_for('static', filename='images/sign4.png') }}" width='35' height="35"></a>
-                   
+                <a href='#home' onclick="document.title = 'Home | Syed Ahmed'"><img id='nextButton2' class='img-fluid rounded mr-3 mt-3' src="{{ url_for('static', filename='images/sign4.png') }}" width='35' height="35"></a>
 
                 <div id='iconContainer' class='container'>
+
+                    <div class='row'>
+                        <div class='col-1'>
+                            <a href="resume" target='_blank'><img id='resumeButton' class='mb-3' src="{{ url_for('static', filename='images/resume.png') }}" width='26' height='26'></a>
+                        </div>
+                    </div>
 
                     <div class='row'>
                         <div class='col-1'>
                             <a href='https://github.com/syed-ahm' target='_blank'><img class='mb-3' src="{{ url_for('static', filename='images/git.png') }}"  width='25' height='25'></a>
                         </div>
                     </div>
-                        
+
                     <div class='row'>
                         <div class='col-1'>
-                            <a href='https://www.instagram.com/syedahmedd_/' target='_blank'><img class='mb-3' src="{{ url_for('static', filename='images/ig.png') }}"  width='26' height='26'></a>
-                        </div>
-                    </div>
-                    
-                    <div class='row'>
-                        <div class='col-1'>
-                            <a href="https://www.linkedin.com/in/syed-ahmed-6709021aa/" target='_blank'><img class='mb-3' src="{{ url_for('static', filename='images/linkedin.png') }}" width='24' height='24'></a>
+                            <a href="https://www.linkedin.com/in/syed-ahmed-6709021aa/" target='_blank'><img id='linkedInButton' src="{{ url_for('static', filename='images/linkedin.png') }}" width='24' height='24'></a>
                         </div>
                     </div>
 
@@ -70,29 +82,27 @@
                             <a href="" target=''><img id='emailButton' src="{{ url_for('static', filename='images/email.png') }}" width='26' height='26'></a>
                         </div>
                     </div>
-                    
+
+                    <div class='row'>
+                        <div class='col-1'>
+                            <a href='https://www.instagram.com/syedahmedd_/' target='_blank'><img src="{{ url_for('static', filename='images/ig.png') }}"  width='26' height='26'></a>
+                        </div>
+                    </div>
+    
                 </div>
 
                 <div id='emailBox' class='rounded bg-success'>
                     <p>Email Copied!</p> 
                 </div>
                 
-
-                <div id='aboutMeParagraph'>
-                    <h4>aboutMe</h4>
-
-
+                <div id='aboutParagraph'>
                 </div>
-
 
                 <div>
                     <a href='#projects' onclick="document.title = 'Projects | Syed Ahmed'"><img id='nextButton3' class='img-fluid rounded m-3' src="{{ url_for('static', filename='images/sign3.png') }}" width='35' height="35"></a>                    
                 </div>
 
-
             </div>
-
-
 
 
             <div id='projects' class='w-100 h-100'>
@@ -102,34 +112,10 @@
                 
                 
                 <div>
-                    <a href='#aboutMe' onclick="document.title = 'About | Syed Ahmed'"><img id='nextButton4' class='img-fluid float-right rounded mr-3' src="{{ url_for('static', filename='images/sign4.png') }}" width='35' height="35"></a>
+                    <a href='#about' onclick="document.title = 'About | Syed Ahmed'"><img id='nextButton4' class='img-fluid rounded m-3' src="{{ url_for('static', filename='images/sign4.png') }}" width='35' height="35"></a>
                 </div>
-                
-
-
-
-
-                <div>
-                    <a href='#resume' onclick="document.title = 'Resume | Syed Ahmed'"><img id='nextButton5' class='img-fluid float-left rounded m-3' src="{{ url_for('static', filename='images/sign3.png') }}" width='35' height="35"></a>
-                </div>
-
-
-
-            </div>
-
             
-            <div id='resume' class='w-100 h-100'>
 
-            
-                <h2 id='resumeScreenHeader' class='text-left pl-2 pt-2 font-weight-light'>Resume</h2>
-                
-                
-                <div>
-                    <a href='#projects' onclick="document.title = 'Projects | Syed Ahmed'"><img id='nextButton6' class='img-fluid float-right rounded mr-3' src="{{ url_for('static', filename='images/sign4.png') }}" width='35' height="35"></a>
-                </div>
-
-
-                
 
             </div>
 
