@@ -1,44 +1,25 @@
-// Grabbing arrow image elements
+// Grabbing buttons
 var nextButton1 = document.getElementById('nextButton1'),
-    nextButton2 = document.getElementById('nextButton2'),
-    nextButton3 = document.getElementById('nextButton3'),
     nextButton4 = document.getElementById('nextButton4');
 
-// Removes arrow image animation/delay so new animation can be added / allows scrolling after mainpage animations
+// Removes nextButton1 animation/delay so new animation can be added / allows scrolling after mainpage animations
 setTimeout(function() {
-    nextButton1.classList.remove('animate__bounceInDown', 'animate__delay-5s');
+    nextButton1.classList.remove('animate__bounceInDown', 'animate__delay-4s');
     document.getElementById('html').style.overflowY = 'scroll';
-}, 6000)
+}, 5000)
+
+
 
 
 // Adding onmouseover events on arrow images for shake animation
 nextButton1.addEventListener('mouseover', nextButton1Shake);
-
-nextButton2.addEventListener('mouseover', nextButton2Shake);
-nextButton3.addEventListener('mouseover', nextButton3Shake);
-
 nextButton4.addEventListener('mouseover', nextButton4Shake);
-
 
 // Adds the animation to nextButtons and removes after 1s
 function nextButton1Shake() {
     nextButton1.classList.add('animate__swing');
     setTimeout(function() {
         nextButton1.classList.remove('animate__swing');
-    }, 1000);
-}
-
-function nextButton2Shake() {
-    nextButton2.classList.add('animate__swing');
-    setTimeout(function() {
-        nextButton2.classList.remove('animate__swing');
-    }, 1000);
-}
-
-function nextButton3Shake() {
-    nextButton3.classList.add('animate__swing');
-    setTimeout(function() {
-        nextButton3.classList.remove('animate__swing');
     }, 1000);
 }
 
@@ -52,27 +33,53 @@ function nextButton4Shake() {
 
 
 
-// Add click event on nextButton1
-nextButton1.addEventListener('click', aboutMeScreenAnimations);
+// Grabs all icons in iconContainer
+var icons = [
+    resumeButton = document.getElementById('resumeButton'),
+    githubButton = document.getElementById('githubButton'),
+    linkedInButton = document.getElementById('linkedInButton'),
+    emailButton = document.getElementById('emailButton'),
+    instagramButton = document.getElementById('instagramButton')
+];
 
-// Adds and removes animations for aboutMe screen
-function aboutMeScreenAnimations() {
-    // add animations
-    nextButton2.classList.add('animate__animated', 'animate__fadeInRight', 'animate__delay-1s');
-    nextButton3.classList.add('animate__animated', 'animate__fadeInLeft', 'animate__delay-1s');
+// Grabs all navbar items
+var navItems = [
+    homeNavButton = document.getElementById('homeNavButton'),
+    projNavButton = document.getElementById('projNavButton'),
+    resumeNavButton = document.getElementById('resumeNavButton')
+]
 
-    // removes after 1s
+// Adds click event to nextButton1
+nextButton1.addEventListener('click', aboutScreenAnimations);
+
+// Adds and removes animations on iconContainer icons and navbar items 
+function aboutScreenAnimations() {
+    for (var icon=0; icon < icons.length; icon++) {
+        icons[icon].classList.add('animate__animated', 'animate__fadeInLeft');
+    }
+
+    for (var item=0; item < navItems.length; item++) {
+        navItems[item].classList.add('animate__animated', 'animate__fadeInDown');
+    }
+
     setTimeout(function() {
-        nextButton2.classList.remove('animate__fadeInRight', 'animate__delay-1s');
-        nextButton3.classList.remove('animate__fadeInLeft', 'animate__delay-1s');
-    }, 2000);
+        for (var icon=0; icon < icons.length; icon++) {
+            icons[icon].classList.remove('animate__animated', 'animate__fadeInLeft');
+        }
+
+        for (var item=0; item < navItems.length; item++) {
+            navItems[item].classList.remove('animate__animated', 'animate__fadeInDown');
+        }
+        
+    }, 3000)
+
 }
 
 
 
 
-// Add click event on nextButton3
-nextButton3.addEventListener('click', projectScreenAnimations);
+// Add click event on projNavButton
+projNavButton.addEventListener('click', projectScreenAnimations);
 
 // Adds and removes animations for projects screen
 function projectScreenAnimations() {
@@ -112,6 +119,7 @@ function emailCopyAnimation(event) {
         emailBox.classList.add('animate__fadeOutLeft');
     }, 1900)
 }
+
 
 
 

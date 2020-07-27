@@ -9,6 +9,10 @@ html::-webkit-scrollbar {
     display: none;
 }
 
+#wrapper {
+    position: relative;
+}
+
 #about {
     position: relative;
 }
@@ -21,10 +25,6 @@ html::-webkit-scrollbar {
 #resume {
     background-color: rgb(231, 132, 65);
     position: relative;
-}
-
-#navbarDiv {
-    position: sticky;
 }
 
 #iconContainer {
@@ -41,17 +41,14 @@ html::-webkit-scrollbar {
     top: 14%;
 }
 
-#nextButton2 {
-    position: absolute;
-    top: 2rem;
-    right: 0rem;
-    z-index: 1;
-}
-
-#nextButton3 {
-    position: absolute;
-    bottom: 0rem;
-    left: 0rem;
+#aboutHeader {
+    position: absolute; 
+    left: 0; 
+    right: 0;
+    top: 3rem;
+    margin-left: auto; 
+    margin-right: auto; 
+    width: 130px;
 }
 
 #nextButton4 {
@@ -60,23 +57,45 @@ html::-webkit-scrollbar {
     right: 0rem;
 }
 
-#nextButton5 {
-    position: absolute;
-    bottom: 0rem;
-    left: 0rem;
+#resumeButton {
+    animation-delay: 200ms;
 }
 
-#nextButton6 {
-    position: absolute;
-    top: 0rem;
-    right: 0rem;
+#githubButton {
+    animation-delay: 300ms; 
 }
+
+#linkedInButton {
+    animation-delay: 500ms; 
+}
+
+#emailButton {
+    animation-delay: 700ms; 
+}
+
+#instagramButton {
+    animation-delay: 900ms; 
+}
+
+
+#homeNavButton {
+    animation-delay: 200ms;
+}
+
+#projNavButton {
+    animation-delay: 450ms;
+}
+
+#resumeNavButton {
+    animation-delay: 550ms;
+}
+
 
 #emailBox {
     width: 5.5rem;
     height: 1.7rem;
     position: absolute;
-    bottom: 11%;
+    bottom: 7%;
     left: 1%;
     visibility: hidden;
 }
@@ -96,4 +115,5 @@ html::-webkit-scrollbar {
 #emailButton {
     margin-bottom: .6rem;
 }
+
 
