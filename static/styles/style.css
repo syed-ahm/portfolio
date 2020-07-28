@@ -1,0 +1,114 @@
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    scrollbar-width: none;
+}
+
+html::-webkit-scrollbar {
+    display: none;
+}
+
+#wrapper {
+    position: relative;
+}
+
+#about {
+    position: relative;
+}
+
+#projects {
+    position: relative;
+    background-color: rgb(145, 150, 158); 
+}
+
+#iconContainer {
+    height: 8rem;
+    width: 4rem;
+    position: absolute;
+    top: 37%;
+    left: 0rem;
+}
+
+#aboutParagraph {
+    position: absolute;
+    left: 10rem;
+    top: 10rem;
+}
+
+#aboutHeader {
+    position: absolute; 
+    left: 0; 
+    right: 0;
+    top: 2.5rem;
+    margin-left: auto; 
+    margin-right: auto; 
+    width: 130px;
+}
+
+#nextButton2 {
+    position: absolute;
+    top: 0rem;
+    right: 0rem;
+}
+
+#resumeButton {
+    animation-delay: 200ms;
+}
+
+#githubButton {
+    animation-delay: 300ms; 
+}
+
+#linkedInButton {
+    animation-delay: 500ms; 
+}
+
+#emailButton {
+    animation-delay: 700ms; 
+}
+
+#instagramButton {
+    animation-delay: 900ms; 
+}
+
+
+#homeNavButton {
+    animation-delay: 200ms;
+}
+
+#projNavButton {
+    animation-delay: 450ms;
+}
+
+#resumeNavButton {
+    animation-delay: 550ms;
+}
+
+
+#emailBox {
+    width: 5.5rem;
+    height: 1.7rem;
+    position: absolute;
+    bottom: 7%;
+    left: 1%;
+    visibility: hidden;
+}
+
+#emailBox p {
+    text-align: center; 
+    font-weight: 500;
+    font-size: 0.8rem;
+    position: relative;
+    top: 0.2rem;
+}
+    
+#linkedInButton {
+    margin-bottom: .7rem;
+}
+
+#emailButton {
+    margin-bottom: .6rem;
+}
+
+
