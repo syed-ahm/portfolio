@@ -13,3 +13,6 @@ Front-End:
 Back-End:
 - Python
 - Flask
+
+Server:
+-Heroku

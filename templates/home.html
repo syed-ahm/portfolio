@@ -2,7 +2,7 @@
     <head>
         <meta charset='utf-8'>
         <meta name='description' content="Syed Ahmed's Portfolio.">
-        <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
+        <meta name='viewport' content='width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0'>
         <title>Home | Syed Ahmed</title>
         <link rel="shortcut icon" href="{{ url_for('static', filename='images/favicon.ico') }}">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
@@ -28,7 +28,7 @@
                 </div>
 
                 <div>
-                    <a href='#about' onclick="document.title = 'About | Syed Ahmed';"><img id='nextButton1' class='img-fluid rounded float-right mr-5 animate__animated animate__bounceInDown animate__delay-4s' src="{{ url_for('static', filename='images/sign3.png') }}" width='50' height="50"></a>
+                    <a href='#about' onclick="document.title = 'About | Syed Ahmed';"><img id='nextButton1' class='img-fluid rounded mr-5 animate__animated animate__bounceInDown animate__delay-4s' src="{{ url_for('static', filename='images/sign3.png') }}" width='50' height="50"></a>
                 </div> 
 
             </div>
@@ -61,31 +61,31 @@
                 <div id='iconContainer' class='container'>
 
                     <div class='row'>
-                        <div class='col-1'>
+                        <div class='col'>
                             <a href="resume" target='_blank'><img id='resumeButton' class='mb-3' src="{{ url_for('static', filename='images/resume.png') }}" width='26' height='26'></a>
                         </div>
                     </div>
 
                     <div class='row'>
-                        <div class='col-1'>
+                        <div class='col'>
                             <a href='https://github.com/syed-ahm' target='_blank'><img id='githubButton'class='mb-3' src="{{ url_for('static', filename='images/git.png') }}"  width='25' height='25'></a>
                         </div>
                     </div>
 
                     <div class='row'>
-                        <div class='col-1'>
+                        <div class='col'>
                             <a href="https://www.linkedin.com/in/syed-ahmed-6709021aa/" target='_blank'><img id='linkedInButton' src="{{ url_for('static', filename='images/linkedin.png') }}" width='24' height='24'></a>
                         </div>
                     </div>
 
                     <div class='row'>
-                        <div class='col-1'>
+                        <div class='col'>
                             <a href="" target=''><img id='emailButton' src="{{ url_for('static', filename='images/email.png') }}" width='26' height='26'></a>
                         </div>
                     </div>
 
                     <div class='row'>
-                        <div class='col-1'>
+                        <div class='col'>
                             <a href='https://www.instagram.com/syedahmedd_/' target='_blank'><img id='instagramButton' src="{{ url_for('static', filename='images/ig.png') }}"  width='26' height='26'></a>
                         </div>
                     </div>
@@ -100,7 +100,7 @@
                 <div id='aboutParagraph' class='container'>
 
                     <div class='row'>
-                        <div class='col-xl-8 col-lg-6 col-md-6 col-sm-4 col-5'>
+                        <div>
                             <p class='aboutText'>
                                 From the moment I first used a computer, I've always been fascinated by them and loved finding out how they worked. 
                             </p>
@@ -108,7 +108,7 @@
                     </div>
 
                     <div class='row'>
-                        <div class='col-xl-8 col-lg-6 col-md-6 col-sm-4 col-5'>
+                        <div>
                             <p class='aboutText'>
                                 This evergrowing passion throughout my life has led me to where I am today, studying software engineering at the University of Guelph. 
                             </p>
@@ -116,7 +116,7 @@
                     </div>
 
                     <div class='row'>
-                        <div class='col-xl-8 col-lg-6 col-md-6 col-sm-4 col-5'>
+                        <div>
                             <p class='aboutText'>
                                 I love learning new technologies and creating things, whatever it may be, I enjoy every second of it!
                             </p>
@@ -127,11 +127,11 @@
                 
                 <div id='slideContainer'>
                     <div class='slide showing'>
-                        <img id='image1' src="{{ url_for('static', filename='images/image1.jpg')}}" height='360' width='480'>
+                        <img src="{{ url_for('static', filename='images/image1.jpg')}}" height='360' width='480'>
                     </div>
                     
                     <div class='slide'>
-                        <img id='image2' src="{{ url_for('static', filename='images/image3.jpg')}}" height='360' width='480'>        
+                        <img src="{{ url_for('static', filename='images/image3.jpg')}}" height='360' width='480'>        
                     </div>
                 </div>
 
