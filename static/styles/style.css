@@ -1,3 +1,21 @@
+@media only screen and (max-device-width: 820px) {
+    #slideContainer {
+        position: relative;
+        left: 10%;
+        top: 30%;
+        width: 320px;
+        height: 400px;
+    }
+    
+    #image1 #image2 {
+        width: 320px;
+        height: 400px;
+    }
+}
+
+
+
+
 html {
     scroll-behavior: smooth;
     overflow-x: hidden;
@@ -30,12 +48,6 @@ html::-webkit-scrollbar {
     left: 0rem;
 }
 
-#aboutParagraph {
-    position: absolute;
-    left: 10rem;
-    top: 10rem;
-}
-
 #aboutHeader {
     position: absolute; 
     left: 0; 
@@ -43,7 +55,17 @@ html::-webkit-scrollbar {
     top: 2.5rem;
     margin-left: auto; 
     margin-right: auto; 
-    width: 130px;
+    width: 120px;
+}
+
+#aboutParagraph {
+    position: absolute;
+    left: 10%;
+    top: 25%;
+}
+
+.aboutText {
+    font-size: 1.2rem;
 }
 
 #nextButton2 {
@@ -72,7 +94,6 @@ html::-webkit-scrollbar {
     animation-delay: 900ms; 
 }
 
-
 #homeNavButton {
     animation-delay: 200ms;
 }
@@ -84,7 +105,6 @@ html::-webkit-scrollbar {
 #resumeNavButton {
     animation-delay: 550ms;
 }
-
 
 #emailBox {
     width: 5.5rem;
@@ -112,3 +132,39 @@ html::-webkit-scrollbar {
 }
 
 
+#slideContainer {
+    position: relative;
+    left: 58%;
+    top: 12%;
+    height: 360px;
+    width: 480px;
+    border-style: solid;
+    border-color: lightskyblue;
+    border-width: 1px;
+    list-style-type: none;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 1;
+    
+
+    -webkit-transition: opacity 1s;
+    -moz-transition: opacity 1s;
+    -o-transition: opacity 1s;
+    transition: opacity 1s;
+}
+
+.showing {
+    opacity: .7;
+    z-index: 2;
+}

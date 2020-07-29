@@ -12,7 +12,7 @@ def home():
 # /resume redirects to resume pdf
 @app.route('/resume')
 def resume():
-    return send_file('static/syed_ahmed_RESUME.pdf', attachment_filename='syed_ahmed_RESUME.pdf')
+    return send_file('static/other/syed_ahmed_RESUME.pdf', attachment_filename='syed_ahmed_RESUME.pdf')
 
 
 # attempt to stop browser caching

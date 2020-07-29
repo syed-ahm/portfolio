@@ -11,8 +11,6 @@
     </head>
     <body>
 
-        
-
         <div id='wrapper'> 
 
             <div id='home' class="d-flex w-100 h-100 flex-column bg-primary text-center justify-content-center">
@@ -58,7 +56,7 @@
                     </nav>
                 </div>  
 
-                <h3 id='aboutHeader' class='font-weight-light'>Who am I?</h3>
+                <h3 id='aboutHeader' class='font-weight-light'>About Me</h3>
                 
                 <div id='iconContainer' class='container'>
 
@@ -100,13 +98,42 @@
                 
                 
                 <div id='aboutParagraph' class='container'>
+
                     <div class='row'>
-                        <div class='col'>
-                            <p class=''></p>
+                        <div class='col-xl-8 col-lg-6 col-md-6 col-sm-4 col-5'>
+                            <p class='aboutText'>
+                                From the moment I first used a computer, I've always been fascinated by them and loved finding out how they worked. 
+                            </p>
                         </div>
-                    </div>  
+                    </div>
+
+                    <div class='row'>
+                        <div class='col-xl-8 col-lg-6 col-md-6 col-sm-4 col-5'>
+                            <p class='aboutText'>
+                                This evergrowing passion throughout my life has led me to where I am today, studying software engineering at the University of Guelph. 
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class='row'>
+                        <div class='col-xl-8 col-lg-6 col-md-6 col-sm-4 col-5'>
+                            <p class='aboutText'>
+                                I love learning new technologies and creating things, whatever it may be, I enjoy every second of it!
+                            </p>
+                        </div>
+                    </div>
+
                 </div>
-            
+                
+                <div id='slideContainer'>
+                    <div class='slide showing'>
+                        <img id='image1' src="{{ url_for('static', filename='images/image1.jpg')}}" height='360' width='480'>
+                    </div>
+                    
+                    <div class='slide'>
+                        <img id='image2' src="{{ url_for('static', filename='images/image3.jpg')}}" height='360' width='480'>        
+                    </div>
+                </div>
 
             </div>
 
