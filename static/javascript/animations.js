@@ -84,8 +84,6 @@ function aboutScreenAnimations() {
 }
 
 
-
-
 // Add click event on projNavButton
 projNavButton.addEventListener('click', projectScreenAnimations);
 
