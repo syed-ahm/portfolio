@@ -7,13 +7,14 @@
         <link rel="shortcut icon" href="{{ url_for('static', filename='images/favicon.ico') }}">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
         <link rel='stylesheet' href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <link rel='stylesheet' href="{{ url_for('static', filename='styles/style.css') }}">
     </head>
     <body>
 
-        <div id='wrapper'> 
+        <div id='wrapper' class='bg-light'> 
 
-            <div id='home' class="d-flex w-100 h-100 flex-column bg-primary text-center justify-content-center">
+            <div id='home' class="d-flex w-100 h-100 flex-column text-center justify-content-center">
 
                 <div class='animate__animated animate__fadeInDown animate__delay-1s'>
                     <h1 id='intro1' class='font-weight-light'>Hi, I'm Syed</h1>        
@@ -34,7 +35,7 @@
             </div>
         
 
-            <div id='about' class="w-100 h-100 bg-light">
+            <div id='about' class="bg-light">
 
                 <div id='navbarContainer'>
                     <nav class="navbar navbar-expand-sm navbar-light bg-light">
@@ -80,7 +81,7 @@
 
                     <div class='row'>
                         <div class='col'>
-                            <a href="" target=''><img id='emailButton' src="{{ url_for('static', filename='images/email.png') }}" width='26' height='26'></a>
+                            <a href="mailto:syed-hamdan@hotmail.com"><img id='emailButton' src="{{ url_for('static', filename='images/email.png') }}" width='26' height='26'></a>
                         </div>
                     </div>
 
@@ -92,10 +93,6 @@
     
                 </div>
 
-                <div id='emailBox' class='rounded bg-success'>
-                    <p>Email Copied!</p> 
-                </div>
-                
                 
                 <div id='aboutParagraph' class='container'>
 
@@ -138,8 +135,7 @@
             </div>
 
 
-            <div id='projects' class='w-100 h-100'>
-                
+            <div id='projects'>                
                 
                 <h2 id='projectScreenHeader' class='text-center p-2 font-weight-light'>My Projects</h2>
                 
@@ -147,17 +143,77 @@
                 <div>
                     <a href='#about' onclick="document.title = 'About | Syed Ahmed'"><img id='nextButton2' class='img-fluid rounded m-3' src="{{ url_for('static', filename='images/sign4.png') }}" width='40' height="40"></a>
                 </div>
-            
 
+                <div class='cardWrapper'>
+                    <div class='card' data-aos='fade-left'>
+                        <div>
+                            <img class='cardImg' src="{{ url_for('static', filename='images/city.jpg') }}" height='250' width='445'></img>
+                        </div>
+                        
+                        <div class='contentBox'>
+                            <h4 class='text-center'>Title here</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, error eveniet. Dolore ullam eius perspiciatis enim. Fugit exercita.</p>
+                        </div>
+
+                        <div class='buttons'>
+                            <a  target='_blank' href='#'><button class='codeCardButton' type='button'>&lt;/&gt;code</button></a>
+                            <a  target='_blank' href='#'><button class='visitCardButton' type='button'>visit</button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class='cardWrapper'>
+                    <div class='card' data-aos='fade-right'>
+                        <div>
+                            <img class='cardImg' src="{{ url_for('static', filename='images/ig.png') }}" height='250' width='445'></img>
+                        </div>
+                        
+                        <div class='contentBox'>
+                            <h4 class='text-center'>Title here</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, error eveniet. Dolore ullam eius perspiciatis enim. Fugit exercita.</p>
+                        </div>
+
+                        <div class='buttons'>
+                            <a  target='_blank' href='#'><button class='codeCardButton' type='button'>&lt;/&gt;code</button></a>
+                            <a  target='_blank' href='#'><button class='visitCardButton' type='button'>visit</button></a>
+                        </div>
+                    </div>
+                </div>
 
             </div>
 
+            <footer id='footer' class='bg-light'>
+                <div id='footerText'>
+                    <h4 class='text-center font-weight-light mt-2 mb-4' style='width: 100%;'>Let's get connected.</h4>
+                </div>
+                <div id='socialButtons' class='container'>
+                    <div class='row'>
+                        <div class='col'>
+                            <a href="resume" target='_blank'><img id='resumeButton' class='m-3' src="{{ url_for('static', filename='images/resume.png') }}" width='26' height='26'></a>
+                        </div>
+                        <div class='col'>
+                            <a href='https://github.com/syed-ahm' target='_blank'><img id='githubButton' class='m-3' src="{{ url_for('static', filename='images/git.png') }}"  width='25' height='25'></a>
+                        </div>
+                        <div class='col'>
+                            <a href="https://www.linkedin.com/in/syed-ahmed-6709021aa/" target='_blank'><img id='linkedInButton' class='m-3' src="{{ url_for('static', filename='images/linkedin.png') }}" width='24' height='24'></a>
+                        </div>
+                        <div class='col'>
+                            <a href="mailto:syed-hamdan@hotmail.com" target=''><img id='emailButton' class='m-3' src="{{ url_for('static', filename='images/email.png') }}" width='26' height='26'></a>
+                        </div>
+                    
+                    </div>
+
+                    <div id='toTop'>
+                        <a href='#home' onclick="document.title = 'Home | Syed Ahmed'"><img id='nextButton3' class='img-fluid rounded m-3' src="{{ url_for('static', filename='images/sign4.png') }}" width='30' height="30"></a>
+                    </div>
+                </div>
+            </footer>
 
         </div>
 
 
     
-
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>

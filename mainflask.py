@@ -4,10 +4,11 @@ app = Flask(__name__)
 
 
 # /home opens home.html
-@app.route("/home")
 @app.route("/")
+@app.route("/home")
 def home():
     return render_template('home.html')
+
 
 # /resume redirects to resume pdf
 @app.route('/resume')

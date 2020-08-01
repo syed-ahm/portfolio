@@ -7,8 +7,7 @@ Front-End:
 - CSS
 - Javascript
 - Bootstrap
-- Animate.styles
-  
+
   
 Back-End:
 - Python

@@ -1,6 +1,7 @@
 // Grabbing buttons
 var nextButton1 = document.getElementById('nextButton1'),
-    nextButton2 = document.getElementById('nextButton2');
+    nextButton2 = document.getElementById('nextButton2'),
+    nextButton3 = document.getElementById('nextButton3');
 
 // Removes nextButton1 animation/delay so new animation can be added / allows scrolling after mainpage animations
 setTimeout(function() {
@@ -14,6 +15,7 @@ setTimeout(function() {
 // Adding onmouseover events on arrow images for shake animation
 nextButton1.addEventListener('mouseover', nextButton1Shake);
 nextButton2.addEventListener('mouseover', nextButton2Shake);
+nextButton3.addEventListener('mouseover', nextButton3Shake);
 
 // Adds the animation to nextButtons and removes after 1s
 function nextButton1Shake() {
@@ -27,6 +29,13 @@ function nextButton2Shake() {
     nextButton2.classList.add('animate__swing');
     setTimeout(function() {
         nextButton2.classList.remove('animate__swing');
+    }, 1000);
+}
+
+function nextButton3Shake() {
+    nextButton3.classList.add('animate__animated', 'animate__swing');
+    setTimeout(function() {
+        nextButton3.classList.remove('animate__animated', 'animate__swing');
     }, 1000);
 }
 
@@ -92,33 +101,6 @@ function projectScreenAnimations() {
 }
 
 
-
-
-// Grabs emailButton, box
-var emailButton = document.getElementById('emailButton'),
-    emailBox = document.getElementById('emailBox');
-
-// my email
-const emailText = 'syed-hamdan@hotmail.com'
-
-// Add emailButton click event listener
-emailButton.addEventListener('click', emailCopyAnimation);
-
-// Selects my email from invisible textbox and copies it to clipboard, then plays noti box animation
-function emailCopyAnimation(event) {
-    // copies text
-    event.preventDefault();
-    navigator.clipboard.writeText(emailText);
-
-    // plays noti animaton
-    emailBox.style.visibility = 'visible';
-    emailBox.classList.add('animate__animated', 'animate__slideInLeft');
-    setTimeout(function() {
-        emailBox.classList.remove('animate__slideInLeft');
-        emailBox.classList.add('animate__fadeOutLeft');
-    }, 1900)
-}
-
 // Controls slideshow by changing class on the images 
 var slides = document.querySelectorAll('#slideContainer .slide');
 var currentSlide = 0;
@@ -130,6 +112,12 @@ function nextSlide() {
     slides[currentSlide].className = 'slide showing';
 }
 
+
+// initalize's animation on scroll
+AOS.init({
+    offset: 180,
+    duration: 1500,
+});
 
 
 
