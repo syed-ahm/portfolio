@@ -57,6 +57,11 @@ html::-webkit-scrollbar {
     font-size: 1.2rem;
 }
 
+#nextButton1 {
+    position: absolute;
+    right: 10px;
+}
+
 #nextButton2 {
     position: absolute;
     top: 0rem;
@@ -250,11 +255,10 @@ html::-webkit-scrollbar {
     overflow: hidden;
 }
 
-#socialButtons {
-    margin-bottom: auto; 
+#socialButtons { 
     margin-right: auto;
     width: 300px;
-    height: 150px;
+    height: 75px;
     padding: 0;
 }
 
@@ -272,6 +276,10 @@ html::-webkit-scrollbar {
     width: 100%;
     height: 45px;
     background-color: grey;
+}
+
+#footerTextDiv {
+    width: 100%;
 }
 
 
@@ -299,10 +307,6 @@ html::-webkit-scrollbar {
         font-size: 25px;
     }
 
-    #nextButton1 {
-        position: absolute;
-        right: 0;
-    }
     /* About Page */
     
     #slideContainer {
@@ -415,13 +419,18 @@ html::-webkit-scrollbar {
         font-size: 0.7rem;
         right: 5%;
     }
+    
+    /* footer */
+    #footerText {
+        font-size: 0.9em;
+    }
 
 }
 
 /* Larger Phones */
 
 @media screen and (min-width: 400px) {
-    
+
     /* About Page */
     #slideContainer {
         position: relative;
@@ -492,12 +501,17 @@ html::-webkit-scrollbar {
         font-size: 0.7rem;
         right: 5%;
     }
+
+    /* footer */
+    #footerText {
+        font-size: 0.8rem;
+    }
 }
 
 /* Tablets */
 
 @media screen and (min-width: 480px) {
-    
+
     /* About Page */
     #aboutHeader {
         left: 15%;
@@ -521,10 +535,14 @@ html::-webkit-scrollbar {
         height: 130px;
     }
 
+    /* footer */
+    #footerText {
+        font-size: 1rem;
+    }
 }
 
 @media screen and (min-width: 600px) {
-    
+
     /* About Page */
     #aboutHeader {
         left: 12%;
@@ -642,6 +660,11 @@ html::-webkit-scrollbar {
 
 
 @media screen and (min-width: 1024px) {
+    /* Home page */
+    
+    #nextButton1 {
+        right: 5px;
+    }
 
     /* About Page */
     #slideContainer {
@@ -719,6 +742,11 @@ html::-webkit-scrollbar {
         height: 30px;
         font-size: 0.8rem;
         right: 5%;
+    }
+    
+    /* footer */
+    #footerText {
+        font-size: 1.3rem;
     }
 }
 
@@ -806,6 +834,10 @@ html::-webkit-scrollbar {
         padding-bottom: 4px;
     }
 
+    /* footer */
+    #footerText {
+        font-size: 1.4rem;
+    }
 }
 
 
@@ -907,7 +939,6 @@ html::-webkit-scrollbar {
         height: 2000px;
     }
 
-
     .card {
         width: 950px;
         height: 1200px;
@@ -946,8 +977,35 @@ html::-webkit-scrollbar {
         padding-bottom: 5px;
     }
 
+    
+
+    /* footer */
+
+
+    #toTop {
+        position: absolute;
+        height: 60px;
+        bottom: 0;
+    }
+
     #socialButtons {
+        margin-top: 3rem;
         width: 500px;
     }
+
+    #footerText {
+        font-size: 1.9rem;
+    }
+
+    #footerTextDiv {
+        position: absolute;
+        top: 0;
+    }
+
+    #nextButton3 {
+        width: 45px;
+        height: 45px;
+    }
+
 }
 

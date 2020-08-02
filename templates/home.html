@@ -29,7 +29,7 @@
                 </div>
 
                 <div>
-                    <a href='#about' onclick="document.title = 'About | Syed Ahmed';"><img id='nextButton1' class='img-fluid rounded mr-5 animate__animated animate__bounceInDown animate__delay-4s' src="{{ url_for('static', filename='images/sign3.png') }}" width='50' height="50"></a>
+                    <a href='#about' onclick="document.title = 'About | Syed Ahmed';"><img id='nextButton1' class='img-fluid rounded animate__animated animate__bounceInDown animate__delay-4s' src="{{ url_for('static', filename='images/sign3.png') }}" width='50' height="50"></a>
                 </div> 
 
             </div>
@@ -147,7 +147,7 @@
                 <div class='cardWrapper'>
                     <div class='card' data-aos='fade-left'>
                         <div>
-                            <img class='cardImg' src="{{ url_for('static', filename='images/city.jpg') }}" height='250' width='445'></img>
+                            <!-- <img class='cardImg' src="{{ url_for('static', filename='') }}" height='250' width='445'></img> -->
                         </div>
                         
                         <div class='contentBox'>
@@ -183,8 +183,8 @@
             </div>
 
             <footer id='footer' class='bg-light'>
-                <div id='footerText'>
-                    <h4 class='text-center font-weight-light mt-2 mb-4' style='width: 100%;'>Let's get connected.</h4>
+                <div id='footerTextDiv'>
+                    <h4 id='footerText' class='text-center font-weight-light mt-2 mb-4'>Let's get connected.</h4>
                 </div>
                 <div id='socialButtons' class='container'>
                     <div class='row'>
