@@ -2,16 +2,12 @@
 My personal website/portfolio.
 Technologies I'm using:
 
-Front-End:
+Built Using:
 - HTML
 - CSS
 - Javascript
 - Bootstrap
 
-  
-Back-End:
-- Python
-- Flask
 
 Server:
-- Heroku
+- Netlify
