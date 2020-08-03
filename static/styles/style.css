@@ -25,9 +25,9 @@ html::-webkit-scrollbar {
 #projects {
     background-color: rgb(68, 140, 255); 
     position: relative;
-    height: 1800px;
-    display: none;
+    height: 1000px;
 }
+
 
 #iconContainer {
     height: 8rem;
@@ -44,7 +44,7 @@ html::-webkit-scrollbar {
     top: 2.5rem;
     margin-left: auto; 
     margin-right: auto; 
-    width: 120px;
+    width: 180px;
 }
 
 #aboutParagraph {
@@ -190,7 +190,7 @@ html::-webkit-scrollbar {
 }
 
 .cardWrapper:hover {
-    transform: scale(1.04);
+    transform: scale(1.015);
 }
 
 .cardImg {
@@ -296,15 +296,15 @@ html::-webkit-scrollbar {
     /* Home Page */
 
     #intro1 {
-        font-size: 40px;
+        font-size: 45px;
     }
 
     #intro2 {
-        font-size: 25px;
+        font-size: 30px;
     }
 
     #intro3 {
-        font-size: 25px;
+        font-size: 30px;
     }
 
     /* About Page */
@@ -572,6 +572,11 @@ html::-webkit-scrollbar {
 /* Laptop Screens */
 
 @media screen and (min-width: 768px) {
+    /* Home page */
+
+    #nextButton1 {
+        right: 50px;
+    }
 
     /* About Page */
     #slideContainer {
@@ -663,7 +668,7 @@ html::-webkit-scrollbar {
     /* Home page */
     
     #nextButton1 {
-        right: 5px;
+        right: 50px;
     }
 
     /* About Page */
@@ -754,6 +759,11 @@ html::-webkit-scrollbar {
 /* Desktop Screens */
 
 @media screen and (min-width: 1440px) {
+    /* Home Page */
+
+    #nextButton1 {
+        right: 80px;
+    }
 
     /* About Page */
     #slideContainer {
@@ -859,6 +869,7 @@ html::-webkit-scrollbar {
     #nextButton1 {
         width: 80px;
         height: 80px;
+        right: 110px;
     }
 
     /* About page */
