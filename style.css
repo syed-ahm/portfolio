@@ -43,8 +43,7 @@ html::-webkit-scrollbar {
     right: 0;
     margin: 0 auto 0 auto;
 
-
-    width: 180px;
+    font-weight: 400!important;
 }
 
 #aboutParagraph {
@@ -54,6 +53,7 @@ html::-webkit-scrollbar {
 
 .aboutText {
     font-size: 1.2rem;
+    font-weight: 300;
 }
 
 #nextButton1 {
@@ -162,6 +162,10 @@ html::-webkit-scrollbar {
     z-index: 2;
 }
 
+#projectScreenHeader {
+    font-weight: 350!important;
+}
+
 .cardWrapper {
     position: relative;
     margin: 200px auto 200px auto;
@@ -171,7 +175,7 @@ html::-webkit-scrollbar {
     border-radius: 10px;
 
     transition: 0.6s ease;
-    cursor: pointer;
+    cursor: default;
 }
 
 .card {
@@ -332,10 +336,9 @@ html::-webkit-scrollbar {
     }
 
     #aboutHeader {
-        position: absolute;
+        margin: 0 auto 0 auto;
         font-size: 1rem;
-        width: 150px;
-        left: 30%;
+        width: 80px;
     }
 
     #homeNavButton {
@@ -449,11 +452,10 @@ html::-webkit-scrollbar {
     }
 
     #aboutHeader {
+        margin: 0 auto 0 auto;
         font-size: 1rem;
-        width: 150px;
-        left: 25%;
+        width: 80px;
     }
-
     /* Project Screen */
 
     #nextButton2 {
@@ -510,9 +512,7 @@ html::-webkit-scrollbar {
 @media screen and (min-width: 480px) {
 
     /* About Page */
-    #aboutHeader {
-        left: 15%;
-    }
+
 
     #aboutParagraph {
         width: 80%;
@@ -538,8 +538,9 @@ html::-webkit-scrollbar {
 
     /* About Page */
     #aboutHeader {
-        left: 12%;
+        margin: 0 auto 0 auto;
         font-size: 1.3rem;
+        width: 100px;
     }
 
     .aboutText {
@@ -579,8 +580,9 @@ html::-webkit-scrollbar {
     }
     
     #aboutHeader {
-       left: 8%;
-       font-size: 1.5rem;
+        margin: 0 auto 0 auto;
+        font-size: 1.5rem;
+        width: 120px;
     }
     
     #aboutParagraph {
@@ -665,12 +667,12 @@ html::-webkit-scrollbar {
 
     /* About Page */
     #slideContainer {
-        height: 362px;
+        height: 392px;
         width: 502px;
     }
 
     #slideContainer div img {
-        height: 360px;
+        height: 390px;
         width: 500px;
     }
 
@@ -679,8 +681,9 @@ html::-webkit-scrollbar {
     }
 
     #aboutHeader {
-       left: 8%;
-       font-size: 1.5rem;
+        margin: 0 auto 0 auto;
+        font-size: 1.5rem;
+        width: 120px;
     }
     
     
@@ -771,8 +774,9 @@ html::-webkit-scrollbar {
     }
     
     #aboutHeader {
-       left: 8%;
-       font-size: 1.8rem;
+        margin: 0 auto 0 auto;
+        font-size: 1.8rem;
+        width: 140px;
     }
     
     #aboutParagraph {
@@ -878,8 +882,9 @@ html::-webkit-scrollbar {
     }
 
     #aboutHeader {
+        margin: 0 auto 0 auto;
         font-size: 3rem;
-        width: 300px;
+        width: 225px;
     }
 
     #aboutParagraph {
