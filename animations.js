@@ -48,14 +48,14 @@ var icons = [
     githubButton = document.getElementById('githubButton'),
     linkedInButton = document.getElementById('linkedInButton'),
     emailButton = document.getElementById('emailButton'),
-    instagramButton = document.getElementById('instagramButton')
 ];
 
 // Grabs all navbar items
 var navItems = [
     homeNavButton = document.getElementById('homeNavButton'),
     projNavButton = document.getElementById('projNavButton'),
-    resumeNavButton = document.getElementById('resumeNavButton')
+    resumeNavButton = document.getElementById('resumeNavButton'),
+    moreItemsNavButton = document.getElementById('moreItemsNavButton')
 ]
 
 // Adds click event to nextButton1
@@ -64,11 +64,11 @@ nextButton1.addEventListener('click', aboutScreenAnimations);
 // Adds and removes animations on iconContainer icons and navbar items 
 function aboutScreenAnimations() {
     for (var icon=0; icon < icons.length; icon++) {
-        icons[icon].classList.add('animate__animated', 'animate__fadeInLeft');
+        icons[icon].classList.add('animate__fadeInLeft');
     }
 
     for (var item=0; item < navItems.length; item++) {
-        navItems[item].classList.add('animate__animated', 'animate__fadeInDown');
+        navItems[item].classList.add('animate__fadeInDown');
     }
 
     setTimeout(function() {

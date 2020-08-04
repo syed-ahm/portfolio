@@ -20,6 +20,7 @@ html::-webkit-scrollbar {
     position: relative;
     width: 100%;
     height: 100%;
+    overflow: hidden;
 }
 
 #projects {
@@ -27,7 +28,6 @@ html::-webkit-scrollbar {
     position: relative;
     height: 1000px;
 }
-
 
 #iconContainer {
     height: 8rem;
@@ -41,16 +41,15 @@ html::-webkit-scrollbar {
     position: absolute; 
     left: 0; 
     right: 0;
-    top: 2.5rem;
-    margin-left: auto; 
-    margin-right: auto; 
+    margin: 0 auto 0 auto;
+
+
     width: 180px;
 }
 
 #aboutParagraph {
-    position: absolute;
-    left: 10%;
-    top: 25%;
+    position: relative;
+    margin: 0 auto 0 auto;
 }
 
 .aboutText {
@@ -69,23 +68,23 @@ html::-webkit-scrollbar {
 }
 
 #resumeButton {
-    animation-delay: 200ms;
+    animation-delay: 300ms;
 }
 
 #githubButton {
-    animation-delay: 300ms; 
+    animation-delay: 400ms; 
 }
 
 #linkedInButton {
-    animation-delay: 500ms; 
+    animation-delay: 600ms; 
 }
 
 #emailButton {
-    animation-delay: 700ms; 
+    animation-delay: 800ms; 
 }
 
 #instagramButton {
-    animation-delay: 900ms; 
+    animation-delay: 1000ms; 
 }
 
 #homeNavButton {
@@ -128,8 +127,8 @@ html::-webkit-scrollbar {
 
 #slideContainer {
     position: relative;
-    left: 58%;
-    top: 12%;
+    margin: 0 auto 0 auto;
+    top: 15%;
     height: 360px;
     width: 480px;
     border-style: solid;
@@ -159,8 +158,20 @@ html::-webkit-scrollbar {
 }
 
 .showing {
-    opacity: 1;
+    opacity: 0.7;
     z-index: 2;
+}
+
+.cardWrapper {
+    position: relative;
+    margin: 200px auto 200px auto;
+    padding: 0;
+    top: 12rem;
+
+    border-radius: 10px;
+
+    transition: 0.6s ease;
+    cursor: pointer;
 }
 
 .card {
@@ -171,26 +182,12 @@ html::-webkit-scrollbar {
     box-shadow: 5px 5px 10px black;
 }
 
-.cardWrapper {
-    position: relative;
-    margin: 200px auto 200px auto;
-    padding: 0;
-    width: 450px;
-    height: 650px;
-    top: 12rem;
-
-    border-radius: 10px;
-
-    transition: 0.6s ease;
-    cursor: pointer;
+.cardWrapper:hover {
+    transform: scale(1.015);
 }
 
 .card:hover {
     box-shadow: 3px 3px 10px black;
-}
-
-.cardWrapper:hover {
-    transform: scale(1.015);
 }
 
 .cardImg {
@@ -207,6 +204,11 @@ html::-webkit-scrollbar {
     margin: 10px;
     border-bottom: 10px solid grey;
     border-radius: 30px 30px 15px 15px;
+}
+
+.langBox {
+    display: flex;
+    justify-content: center;
 }
 
 .visitCardButton {
@@ -279,6 +281,7 @@ html::-webkit-scrollbar {
 }
 
 #footerTextDiv {
+    margin-top: 1rem;
     width: 100%;
 }
 
@@ -310,25 +313,20 @@ html::-webkit-scrollbar {
     /* About Page */
     
     #slideContainer {
-        position: relative;
-        left: 32%;
-        top: 58%;
-        width: 132px;
-        height: 102px;
-
+        width: 232px;
+        height: 152px;
     }
     
     #slideContainer div img {
-        width: 130px;
-        height: 100px;
+        width: 230px;
+        height: 150px;
     }
 
     #aboutParagraph {
-        left: 23%;
-        top: 18%;
+        top: 5%;
         width: 60%;
-        
     }
+
     .aboutText {
         font-size: 0.74rem;
     }
@@ -411,6 +409,7 @@ html::-webkit-scrollbar {
         height: 30px;
         font-size: 0.7rem;
         left: 5%;
+        bottom: 0.5%;
     }
 
     .codeCardButton {
@@ -418,6 +417,7 @@ html::-webkit-scrollbar {
         height: 30px;
         font-size: 0.7rem;
         right: 5%;
+        bottom: 0.5%;
     }
     
     /* footer */
@@ -433,23 +433,19 @@ html::-webkit-scrollbar {
 
     /* About Page */
     #slideContainer {
-        position: relative;
-        left: 32%;
-        top: 52%;
-        width: 162px;
-        height: 132px;
-
+        width: 302px;
+        height: 222px;
     }
     
     #slideContainer div img {
-        width: 160px;
-        height: 130px;
+        width: 300px;
+        height: 220px;
     }
 
     #aboutParagraph {
-        left: 25%;
-        top: 18%;
-        width: 60%;
+        top: 8%;
+        left: 5%;
+        width: 70%;
     }
 
     #aboutHeader {
@@ -477,15 +473,14 @@ html::-webkit-scrollbar {
 
     .cardImg {
         width: 345px;
-        height: 200px;
+        height: 250px;
     }
 
     .contentBox {
-        top: 200px;
+        top: 250px;
         width: 340px;
         margin: 3px;
         font-size: 0.8rem;
-        
     }
     
     .visitCardButton {
@@ -493,6 +488,7 @@ html::-webkit-scrollbar {
         height: 30px;
         font-size: 0.7rem;
         left: 5%;
+        bottom: 3%;
     }
 
     .codeCardButton {
@@ -500,11 +496,12 @@ html::-webkit-scrollbar {
         height: 30px;
         font-size: 0.7rem;
         right: 5%;
+        bottom: 3%;
     }
 
     /* footer */
     #footerText {
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
 }
 
@@ -518,26 +515,22 @@ html::-webkit-scrollbar {
     }
 
     #aboutParagraph {
-        top: 22%;
+        width: 80%;
     }
 
     #slideContainer {
-        position: relative;
-        left: 36%;
-        top: 52%;
-        width: 162px;
-        height: 132px;
-
+        width: 302px;
+        height: 222px;
     }
     
     #slideContainer div img {
-        width: 160px;
-        height: 130px;
+        width: 300px;
+        height: 220px;
     }
 
     /* footer */
     #footerText {
-        font-size: 1rem;
+        font-size: 1.1rem;
     }
 }
 
@@ -546,25 +539,21 @@ html::-webkit-scrollbar {
     /* About Page */
     #aboutHeader {
         left: 12%;
+        font-size: 1.3rem;
     }
 
-    #aboutParagraph {
-        top: 22%;
-        left: 20%;
+    .aboutText {
+        font-size: 0.9rem;
     }
 
     #slideContainer {
-        position: relative;
-        left: 30%;
-        top: 42%;
-        width: 222px;
-        height: 182px;
-
+        width: 362px;
+        height: 252px;
     }
     
     #slideContainer div img {
-        width: 220px;
-        height: 180px;
+        width: 360px;
+        height: 250px;
     }
 
 }
@@ -580,15 +569,13 @@ html::-webkit-scrollbar {
 
     /* About Page */
     #slideContainer {
-        left: 55%;
-        top: 30%;
-        height: 242px;
-        width: 362px;
+        height: 342px;
+        width: 462px;
     }
 
     #slideContainer div img {
-        height: 240px;
-        width: 360px;
+        height: 340px;
+        width: 460px;
     }
     
     #aboutHeader {
@@ -597,13 +584,11 @@ html::-webkit-scrollbar {
     }
     
     #aboutParagraph {
-        left: 10%;
-        top: 38%;
-        width: 40%;
+        width: 85%;
     }
     
     .aboutText {
-        font-size: 0.8rem;
+        font-size: 1em;
     }
     
     #nextButton2 {
@@ -624,24 +609,24 @@ html::-webkit-scrollbar {
         width: 25px;
         height: 25px;
     }
+    
+    .cardWrapper {
+        width: 420px;
+        height: 600px;
+    }
 
     .card {
         width: 420px;
         height: 600px;
     }
 
-    .cardWrapper {
-        width: 420px;
-        height: 600px;
-    }
-
     .cardImg {
         width: 415px;
-        height: 250px;
+        height: 300px;
     }
 
     .contentBox {
-        top: 250px;
+        top: 300px;
         width: 410px;
         margin: 3px;
         font-size: 1rem;
@@ -653,6 +638,7 @@ html::-webkit-scrollbar {
         height: 30px;
         font-size: 0.7rem;
         left: 5%;
+        bottom: 3%;
     }
 
     .codeCardButton {
@@ -660,6 +646,12 @@ html::-webkit-scrollbar {
         height: 30px;
         font-size: 0.7rem;
         right: 5%;
+        bottom: 3%;
+    }
+
+    /* footer */
+    #footerText {
+        font-size: 1.3em;
     }
 }
 
@@ -673,30 +665,28 @@ html::-webkit-scrollbar {
 
     /* About Page */
     #slideContainer {
-        left: 65%;
-        top: 24%;
-        height: 302px;
-        width: 422px;
+        height: 362px;
+        width: 502px;
     }
 
     #slideContainer div img {
-        height: 300px;
-        width: 420px;
+        height: 360px;
+        width: 500px;
     }
-    
+
+    #aboutParagraph {
+        width: 85%;
+    }
+
     #aboutHeader {
        left: 8%;
        font-size: 1.5rem;
     }
     
-    #aboutParagraph {
-        left: 10%;
-        top: 36%;
-        width: 50%;
-    }
+    
     
     .aboutText {
-        font-size: 1.1rem;
+        font-size: 1.4rem;
     }
     
     /* Project Screen */
@@ -714,39 +704,42 @@ html::-webkit-scrollbar {
 
     .card {
         width: 450px;
-        height: 600px;
+        height: 700px;
     }
 
     .cardWrapper {
         width: 450px;
-        height: 600px;
+        height: 700px;
     }
 
     .cardImg {
         width: 445px;
-        height: 250px;
+        height: 350px;
     }
 
     .contentBox {
-        top: 250px;
+        top: 350px;
         width: 440px;
         margin: 3px;
         font-size: 0.8rem;
         
     }
+
     
     .visitCardButton {
-        width: 70px;
-        height: 30px;
+        width: 80px;
+        height: 35px;
         font-size: 0.8rem;
         left: 5%;
+        bottom: 3%;
     }
 
     .codeCardButton {
-        width: 70px;
-        height: 30px;
+        width: 80px;
+        height: 35px;
         font-size: 0.8rem;
         right: 5%;
+        bottom: 3%;
     }
     
     /* footer */
@@ -767,30 +760,27 @@ html::-webkit-scrollbar {
 
     /* About Page */
     #slideContainer {
-        left: 65%;
-        top: 24%;
-        height: 302px;
-        width: 422px;
+        
+        height: 452px;
+        width: 612px;
     }
 
     #slideContainer div img {
-        height: 300px;
-        width: 420px;
+        height: 450px;
+        width: 610px;
     }
     
     #aboutHeader {
        left: 8%;
-       font-size: 1.5rem;
+       font-size: 1.8rem;
     }
     
     #aboutParagraph {
-        left: 10%;
-        top: 36%;
-        width: 50%;
+       min-width: 90%;
     }
     
     .aboutText {
-        font-size: 1.1rem;
+        font-size: 1.7rem;
     }
     
     #nextButton2 {
@@ -802,29 +792,29 @@ html::-webkit-scrollbar {
     /* Projects */
  
     #projects {
-        height: 2000px;
+        height: 1200px;
     }
 
     .card {
         width: 550px;
-        height: 700px;
+        height: 800px;
     }
 
     .cardWrapper {
         width: 550px;
-        height: 700px;
+        height: 800px;
     }
 
     .cardImg {
         width: 545px;
-        height: 300px;
+        height: 450px;
     }
 
     .contentBox {
-        top: 300px;
+        top: 450px;
         width: 540px;
         margin: 3px;
-        font-size: 1rem;
+        font-size: 0.8rem;
         
     }
     
@@ -833,7 +823,7 @@ html::-webkit-scrollbar {
         height: 35px;
         font-size: 1rem;
         left: 5%;
-        padding-bottom: 4px;
+        bottom: 3%;
     }
 
     .codeCardButton {
@@ -841,7 +831,7 @@ html::-webkit-scrollbar {
         height: 35px;
         font-size: 1rem;
         right: 5%;
-        padding-bottom: 4px;
+        bottom: 3%;
     }
 
     /* footer */
@@ -849,7 +839,6 @@ html::-webkit-scrollbar {
         font-size: 1.4rem;
     }
 }
-
 
 @media screen and (min-width: 2560px) {
     /* Home page */
@@ -874,9 +863,6 @@ html::-webkit-scrollbar {
 
     /* About page */
     #slideContainer {
-        position: relative;
-        left: 60%;
-        top: 24%;
         width: 1102px;
         height: 802px;
 
@@ -894,6 +880,11 @@ html::-webkit-scrollbar {
     #aboutHeader {
         font-size: 3rem;
         width: 300px;
+    }
+
+    #aboutParagraph {
+        min-width: 100%;
+        
     }
 
     #navbarContainer {
@@ -931,10 +922,6 @@ html::-webkit-scrollbar {
 
     /* Project Page */
 
-    #projects {
-        min-height: 3000px;
-    }
-
     #projectScreenHeader {
         font-size: 58px;
         position: absolute;
@@ -947,7 +934,7 @@ html::-webkit-scrollbar {
     }
 
     #projects {
-        height: 2000px;
+        height: 1800px;
     }
 
     .card {
@@ -962,11 +949,11 @@ html::-webkit-scrollbar {
 
     .cardImg {
         width: 945px;
-        height: 550px;
+        height: 700px;
     }
 
     .contentBox {
-        top: 540px;
+        top: 700px;
         width: 940px;
         margin: 8px;
         font-size: 1.2rem;
@@ -976,36 +963,33 @@ html::-webkit-scrollbar {
         width: 130px;
         height: 55px;
         font-size: 1.2rem;
-        left: 8%;
-        padding-bottom: 5px;
+        left: 4%;
+        bottom: 3%;
     }
 
     .codeCardButton {
         width: 130px;
         height: 55px;
         font-size: 1.2rem;
-        right: 8%;
-        padding-bottom: 5px;
+        right: 4%;
+        bottom: 3%;
     }
-
-    
 
     /* footer */
 
-
     #toTop {
         position: absolute;
-        height: 60px;
+        height: 50px;
         bottom: 0;
     }
 
     #socialButtons {
-        margin-top: 3rem;
+        margin-top: 50px;
         width: 500px;
     }
 
     #footerText {
-        font-size: 1.9rem;
+        font-size: 1.8rem;
     }
 
     #footerTextDiv {
