@@ -1,8 +1,8 @@
 # portfolio
 My personal website/portfolio.
-Technologies I'm using:
+Technologies I used:
 
-Built Using:
+Front-End:
 - HTML
 - CSS
 - Javascript
