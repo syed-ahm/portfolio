@@ -297,6 +297,7 @@ html::-webkit-scrollbar {
 /* Media Queries */
 
 
+
 /* Mobile */
 @media screen and (min-width: 250px) {
 
@@ -429,6 +430,7 @@ html::-webkit-scrollbar {
     }
 
 }
+
 
 /* Larger Phones */
 
@@ -1009,3 +1011,16 @@ html::-webkit-scrollbar {
 
 }
 
+/* height */
+@media screen and (max-height: 590px) {
+    #slideContainer {
+        width: 312px;
+        height: 202px;
+        top: 1.6rem;
+    }
+    
+    #slideContainer div img {
+        width: 310px;
+        height: 200px;
+    }
+}
