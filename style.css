@@ -1012,15 +1012,15 @@ html::-webkit-scrollbar {
 }
 
 /* height */
-@media screen and (max-height: 590px) {
+@media screen and (max-height: 700px) {
     #slideContainer {
-        width: 312px;
-        height: 202px;
-        top: 1.6rem;
+        width: 442px;
+        height: 302px;
+        top: 3rem;
     }
     
     #slideContainer div img {
-        width: 310px;
-        height: 200px;
+        width: 440px;
+        height: 300px;
     }
 }
