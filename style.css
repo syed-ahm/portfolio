@@ -1013,48 +1013,109 @@ html::-webkit-scrollbar {
 
 /* height */
 
-@media screen and (max-height: 700px) {
+/* big screens */
+@media screen and (min-width: 1440px) and (max-height: 950px) {
     /* about screen */
 
     #slideContainer {
         width: 442px;
-        height: 302px;
-        top: 50px;
+        height: 322px;
     }
     
     #slideContainer div img {
         width: 440px;
-        height: 300px;
+        height: 320px;
     }
 }
 
-@media screen and (max-height: 600px) {
+@media screen and (min-width: 1440px) and (max-height: 780px) {
     /* about screen */
+
+    #slideContainer {
+        width: 362px;
+        height: 232px;
+        top: 65px;
+    }
     
+    #slideContainer div img {
+        width: 360px;
+        height: 230px;
+    }
+}
+
+
+/* medium screens */
+@media screen and (min-width: 1024px) and (max-height: 950px) {
+    /* about screen */
+
+    #slideContainer {
+        width: 442px;
+        height: 322px;
+    }
+    
+    #slideContainer div img {
+        width: 440px;
+        height: 320px;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-height: 780px) {
+    /* about screen */
+
+    #slideContainer {
+        width: 362px;
+        height: 232px;
+        top: 65px;
+    }
+    
+    #slideContainer div img {
+        width: 360px;
+        height: 230px;
+    }
+}
+
+
+/* tablets */
+@media screen and (min-width: 768px) and (max-height: 950px) {
+    /* about screen */
+
+    #slideContainer {
+        width: 442px;
+        height: 322px;
+    }
+    
+    #slideContainer div img {
+        width: 440px;
+        height: 320px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-height: 780px) {
+    /* about screen */
+
+    #slideContainer {
+        width: 362px;
+        height: 232px;
+        top: 65px;
+    }
+    
+    #slideContainer div img {
+        width: 360px;
+        height: 230px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-height: 600px) {
+    /* about screen */
+
     #slideContainer {
         width: 352px;
-        height: 252px;
+        height: 222px;
         top: 45px;
     }
     
     #slideContainer div img {
         width: 350px;
-        height: 250px;
+        height: 220px;
     }
 }
-
-@media screen and (max-height: 525px) {
-    /* about screen */
-    
-    #slideContainer {
-        width: 282px;
-        height: 202px;
-        top: 35px;
-    }
-    
-    #slideContainer div img {
-        width: 280px;
-        height: 200px;
-    }
-}
-
