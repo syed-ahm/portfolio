@@ -573,12 +573,12 @@ html::-webkit-scrollbar {
 
     /* About Page */
     #slideContainer {
-        height: 342px;
+        height: 352px;
         width: 462px;
     }
 
     #slideContainer div img {
-        height: 340px;
+        height: 350px;
         width: 460px;
     }
     
@@ -670,12 +670,12 @@ html::-webkit-scrollbar {
 
     /* About Page */
     #slideContainer {
-        height: 392px;
+        height: 402px;
         width: 502px;
     }
 
     #slideContainer div img {
-        height: 390px;
+        height: 400px;
         width: 500px;
     }
 
@@ -767,12 +767,12 @@ html::-webkit-scrollbar {
     /* About Page */
     #slideContainer {
         
-        height: 452px;
+        height: 482px;
         width: 612px;
     }
 
     #slideContainer div img {
-        height: 450px;
+        height: 480px;
         width: 610px;
     }
     
