@@ -320,6 +320,7 @@ html::-webkit-scrollbar {
     #slideContainer {
         width: 232px;
         height: 152px;
+        top: 10%;
     }
     
     #slideContainer div img {
