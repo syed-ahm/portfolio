@@ -281,18 +281,18 @@ html::-webkit-scrollbar {
 
     /* About Page */
     
-    #pic {
-        width: 232px;
-        height: 302px;
-    }
-    
     #aboutParagraph {
         top: 3%;
         width: 60%;
     }
 
+    #pic {
+        width: 152px;
+        height: 222px;
+    }
+
     .aboutText {
-        font-size: 0.6rem;
+        font-size: 0.54rem;
     }
 
     #aboutHeader {
@@ -347,12 +347,16 @@ html::-webkit-scrollbar {
 
     .card {
         width: 220px;
-        height: 400px;
+        height: 500px;
     }
 
     .cardWrapper {
         width: 220px;
-        height: 400px;
+        height: 500px;
+    }
+
+    #contentHeader {
+        font-size: 1.2rem;
     }
 
     .cardImg {
@@ -360,11 +364,16 @@ html::-webkit-scrollbar {
         height: 150px;
     }
 
+    .contentImg {
+        width: 30px;
+        height: 30px;
+    }
+
     .contentBox {
         top: 150px;
         width: 210px;
         margin: 2px;
-        font-size: 0.7rem;
+        font-size: 0.6rem;
     }
     
     .visitCardButton {
