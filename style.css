@@ -288,7 +288,7 @@ html::-webkit-scrollbar {
     }
 
     .aboutText {
-        font-size: 0.74rem;
+        font-size: 0.6rem;
     }
 
     #aboutHeader {
@@ -467,6 +467,11 @@ html::-webkit-scrollbar {
         width: 80%;
     }
 
+    #pic {
+        width: 262px;
+        height: 352px;
+    }
+
 
     /* footer */
     #footerText {
@@ -592,6 +597,11 @@ html::-webkit-scrollbar {
         width: 86%;
     }
 
+    #pic {
+        width: 462px;
+        height: 552px;
+    }
+
     #aboutHeader {
         margin: 0 auto 0 auto;
         font-size: 1.5rem;
@@ -601,7 +611,7 @@ html::-webkit-scrollbar {
     
     
     .aboutText {
-        font-size: 1.4rem;
+        font-size: 1rem;
     }
     
     /* Project Screen */
