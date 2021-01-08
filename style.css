@@ -281,7 +281,11 @@ html::-webkit-scrollbar {
 
     /* About Page */
     
-
+    #pic {
+        width: 232px;
+        height: 302px;
+    }
+    
     #aboutParagraph {
         top: 3%;
         width: 60%;
