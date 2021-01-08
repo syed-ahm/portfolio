@@ -367,6 +367,8 @@ html::-webkit-scrollbar {
     .contentImg {
         width: 30px;
         height: 30px;
+        position: relative;
+        right: 10px;
     }
 
     .contentBox {
@@ -392,6 +394,7 @@ html::-webkit-scrollbar {
         bottom: 0.5%;
     }
     
+
     /* footer */
     #footerText {
         font-size: 0.9em;
@@ -463,6 +466,8 @@ html::-webkit-scrollbar {
         bottom: 3%;
     }
 
+    
+
     /* footer */
     #footerText {
         font-size: 1rem;
@@ -504,6 +509,7 @@ html::-webkit-scrollbar {
     .aboutText {
         font-size: 0.9rem;
     }
+
     
 }
 
