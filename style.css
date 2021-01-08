@@ -26,7 +26,7 @@ html::-webkit-scrollbar {
 #projects {
     background-color: rgb(68, 140, 255); 
     position: relative;
-    height: 1000px;
+    height: 4200px;
 }
 
 #iconContainer {
@@ -37,22 +37,13 @@ html::-webkit-scrollbar {
     left: 0rem;
 }
 
-#aboutHeader {
-    position: absolute; 
-    left: 0; 
-    right: 0;
-    margin: 0 auto 0 auto;
-
-    font-weight: 400!important;
-}
-
 #aboutParagraph {
     position: relative;
     margin: 0 auto 0 auto;
 }
 
 .aboutText {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: 300;
 }
 
@@ -124,42 +115,15 @@ html::-webkit-scrollbar {
     margin-bottom: .6rem;
 }
 
-
-#slideContainer {
-    position: relative;
-    margin: 0 auto 0 auto;
-    top: 15%;
-    height: 360px;
-    width: 480px;
-    border-style: solid;
-    border-color: lightskyblue;
-    border-width: 1px;
-    list-style-type: none;
+#pic {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }
 
-.slide {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    z-index: 1;
-    
-
-    -webkit-transition: opacity 1s;
-    -moz-transition: opacity 1s;
-    -o-transition: opacity 1s;
-    transition: opacity 1s;
-}
-
-.showing {
-    opacity: 0.7;
-    z-index: 2;
+.blueLink {
+    color: blue;
 }
 
 #projectScreenHeader {
@@ -317,19 +281,9 @@ html::-webkit-scrollbar {
 
     /* About Page */
     
-    #slideContainer {
-        width: 232px;
-        height: 152px;
-        top: 10%;
-    }
-    
-    #slideContainer div img {
-        width: 230px;
-        height: 150px;
-    }
 
     #aboutParagraph {
-        top: 5%;
+        top: 3%;
         width: 60%;
     }
 
@@ -438,18 +392,10 @@ html::-webkit-scrollbar {
 @media screen and (min-width: 400px) {
 
     /* About Page */
-    #slideContainer {
-        width: 302px;
-        height: 222px;
-    }
-    
-    #slideContainer div img {
-        width: 300px;
-        height: 220px;
-    }
+
 
     #aboutParagraph {
-        top: 8%;
+        top: 3%;
         left: 5%;
         width: 70%;
     }
@@ -521,15 +467,6 @@ html::-webkit-scrollbar {
         width: 80%;
     }
 
-    #slideContainer {
-        width: 302px;
-        height: 222px;
-    }
-    
-    #slideContainer div img {
-        width: 300px;
-        height: 220px;
-    }
 
     /* footer */
     #footerText {
@@ -549,17 +486,7 @@ html::-webkit-scrollbar {
     .aboutText {
         font-size: 0.9rem;
     }
-
-    #slideContainer {
-        width: 362px;
-        height: 252px;
-    }
     
-    #slideContainer div img {
-        width: 360px;
-        height: 250px;
-    }
-
 }
 
 /* Laptop Screens */
@@ -572,15 +499,6 @@ html::-webkit-scrollbar {
     }
 
     /* About Page */
-    #slideContainer {
-        height: 352px;
-        width: 462px;
-    }
-
-    #slideContainer div img {
-        height: 350px;
-        width: 460px;
-    }
     
     #aboutHeader {
         margin: 0 auto 0 auto;
@@ -669,16 +587,7 @@ html::-webkit-scrollbar {
     }
 
     /* About Page */
-    #slideContainer {
-        height: 402px;
-        width: 502px;
-    }
-
-    #slideContainer div img {
-        height: 400px;
-        width: 500px;
-    }
-
+   
     #aboutParagraph {
         width: 86%;
     }
@@ -765,17 +674,12 @@ html::-webkit-scrollbar {
     }
 
     /* About Page */
-    #slideContainer {
-        
-        height: 482px;
-        width: 612px;
+    #pic {
+        width: 462px;
+        height: 552px;
     }
 
-    #slideContainer div img {
-        height: 480px;
-        width: 610px;
-    }
-    
+
     #aboutHeader {
         margin: 0 auto 0 auto;
         font-size: 1.8rem;
@@ -783,7 +687,7 @@ html::-webkit-scrollbar {
     }
     
     #aboutParagraph {
-       min-width: 90%;
+       min-width: 80%;
     }
     
     .aboutText {
@@ -799,7 +703,7 @@ html::-webkit-scrollbar {
     /* Projects */
  
     #projects {
-        height: 1200px;
+        height: 4200px;
     }
 
     .card {
@@ -869,15 +773,9 @@ html::-webkit-scrollbar {
     }
 
     /* About page */
-    #slideContainer {
-        width: 1102px;
-        height: 802px;
-
-    }
-    
-    #slideContainer div img {
-        width: 1100px;
-        height: 800px;
+    #pic {
+        width: 562px;
+        height: 652px;
     }
 
     .aboutText {
@@ -942,7 +840,7 @@ html::-webkit-scrollbar {
     }
 
     #projects {
-        height: 1800px;
+        height: 4200px;
     }
 
     .card {
@@ -1012,36 +910,28 @@ html::-webkit-scrollbar {
 
 }
 
+
 /* height */
 
 /* big screens */
-@media screen and (min-width: 1440px) and (max-height: 950px) {
+@media screen and (min-width: 1440px) and (min-height: 780px) {
     /* about screen */
 
-    #slideContainer {
-        width: 442px;
-        height: 322px;
+    #pic {
+        width: 432px;
+        height: 552px;
     }
     
-    #slideContainer div img {
-        width: 440px;
-        height: 320px;
-    }
 }
 
 @media screen and (min-width: 1440px) and (max-height: 780px) {
     /* about screen */
 
-    #slideContainer {
-        width: 362px;
-        height: 232px;
-        top: 65px;
+    #pic {
+        width: 432px;
+        height: 552px;
     }
-    
-    #slideContainer div img {
-        width: 360px;
-        height: 230px;
-    }
+      
 }
 
 
@@ -1049,30 +939,23 @@ html::-webkit-scrollbar {
 @media screen and (min-width: 1024px) and (max-height: 950px) {
     /* about screen */
 
-    #slideContainer {
-        width: 442px;
-        height: 322px;
+    #pic {
+        width: 332px;
+        height: 452px;
     }
     
-    #slideContainer div img {
-        width: 440px;
-        height: 320px;
-    }
+  
 }
 
 @media screen and (min-width: 1024px) and (max-height: 780px) {
     /* about screen */
 
-    #slideContainer {
-        width: 362px;
-        height: 232px;
-        top: 65px;
+    #pic {
+        width: 332px;
+        height: 452px;
     }
     
-    #slideContainer div img {
-        width: 360px;
-        height: 230px;
-    }
+    
 }
 
 
@@ -1080,43 +963,32 @@ html::-webkit-scrollbar {
 @media screen and (min-width: 768px) and (max-height: 950px) {
     /* about screen */
 
-    #slideContainer {
-        width: 442px;
-        height: 322px;
+    #pic {
+        width: 262px;
+        height: 352px;
     }
     
-    #slideContainer div img {
-        width: 440px;
-        height: 320px;
-    }
+  
 }
 
 @media screen and (min-width: 768px) and (max-height: 780px) {
     /* about screen */
 
-    #slideContainer {
-        width: 362px;
-        height: 232px;
-        top: 65px;
+    #pic {
+        width: 262px;
+        height: 352px;
     }
     
-    #slideContainer div img {
-        width: 360px;
-        height: 230px;
-    }
+   
 }
 
 @media screen and (min-width: 768px) and (max-height: 600px) {
     /* about screen */
 
-    #slideContainer {
-        width: 352px;
-        height: 222px;
-        top: 45px;
+    #pic {
+        width: 202px;
+        height: 252px;
     }
     
-    #slideContainer div img {
-        width: 350px;
-        height: 220px;
-    }
+  
 }

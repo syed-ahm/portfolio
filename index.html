@@ -18,19 +18,11 @@
             <div id='home' class="d-flex w-100 h-100 flex-column text-center justify-content-center">
 
                 <div class='animate__animated animate__fadeInDown animate__delay-1s'>
-                    <h1 id='intro1' class='font-weight-light'>Hi, I'm Syed</h1>        
-                </div>
-
-                <div class='animate__animated animate__fadeInLeft animate__delay-2s'>
-                    <h2 id='intro2' class='font-weight-light'>I like to build things</h2>
-                </div>
-
-                <div class='animate__animated animate__fadeInRight animate__delay-3s'>
-                    <h2 id='intro3' class='font-weight-light'>Take a look around...</h2>
+                    <h1 id='intro1' class='font-weight-light'>Hi there!</h1>        
                 </div>
 
                 <div>
-                    <a href='#about' onclick="document.title = 'About | Syed Ahmed';"><img id='nextButton1' class='img-fluid rounded animate__animated animate__bounceInDown animate__delay-4s' src="images/icons/signDown.png" width='50' height="50"></a>
+                    <a href='#about' onclick="document.title = 'About | Syed Ahmed';"><img id='nextButton1' class='img-fluid rounded animate__animated animate__bounceInDown animate__delay-2s' src="images/icons/signDown.png" width='50' height="50"></a>
                 </div> 
 
             </div>
@@ -57,8 +49,6 @@
                         </div>
                     </nav>
                 </div>  
-
-                <h1 id='aboutHeader' class='font-weight-light'>Who Am I?</h1>
                 
                 <div id='iconContainer' class='container'>
 
@@ -76,7 +66,7 @@
 
                     <div class='row'>
                         <div class='col'>
-                            <a href="https://www.linkedin.com/in/syed-ahmed-6709021aa/" target='_blank'><img id='linkedInButton' class='animate__animated mb-4' src="images/icons/socials/linkedin.png" width='24' height='24'></a>
+                            <a href="https://www.linkedin.com/in/syed-ahm/" target='_blank'><img id='linkedInButton' class='animate__animated mb-4' src="images/icons/socials/linkedin.png" width='24' height='24'></a>
                         </div>
                     </div>
 
@@ -88,45 +78,50 @@
     
                 </div>
 
-                
+            
+                <img id='pic'src="images/slides/pic.JPG">
+
+
                 <div id='aboutParagraph' class='container'>
 
                     <div class='row'>
-                        <div>
-                            <p class='aboutText'>
-                                Growing up, technology has always peaked my interests, fascinating me by what people have accomplished through it. 
-                                It has left me to imagine what's next to come, what I can help bring into reality and what type of impact I can have. 
-                            </p>
-                        </div>
+                        <p class='aboutText' style="font-weight: 400">
+                            I'm Syed,
+                        </p>
                     </div>
 
                     <div class='row'>
-                        <div>
-                            <p class='aboutText'>
-                                This evergrowing passion throughout my life has led me to where I am today, studying software engineering at the University of Guelph. 
-                            </p>
-                        </div>
+                        <p class='aboutText'>
+                            A student studying at the University of Guelph, as a candidate for an <b>Honours Bachelor</b> with major in <b>Software Engineering</b>.
+                        </p>
                     </div>
 
                     <div class='row'>
-                        <div>
-                            <p class='aboutText'>
-                                I love learning new technologies and creating things, whatever it may be, I enjoy every second of it.
-                            </p>
-                        </div>
+                        <p class='aboutText'>
+                            Currently, my skill set revolves around web technologies and languages such as Javascript, React, and Python. 
+                            You can see my works and skills in action by viewing my <a href='#projects' onclick="document.title = 'Projects | Syed Ahmed';" class='blueLink'>projects</a>, 
+                            or visiting my <a href='https://github.com/syed-ahm' target='_blank' class='blueLink'>github</a>.
+                        </p>              
                     </div>
 
+                    <div class='row'>                    
+                        <p class='aboutText'>
+                            I'm seeking internship positions for the summer of 2021. If you like what you see, check out my 
+                            <a href='resume.pdf' class='blueLink'>resume</a> and reach out to me via 
+                            <a class='blueLink' href='mailto:syed-hamdan@hotmail.com'>email</a> or 
+                            <a href='https://www.linkedin.com/in/syed-ahm/' target='_blank' class='blueLink'>linkedin</a> for any potential opportunities.
+                        </p>
+                    </div>
+
+                    <div class='row'>                    
+                        <p class='aboutText'>
+                            The source code for this site can be viewed
+                            <a href='https://github.com/syed-ahm/portfolio' target='_blank' class='blueLink'>here</a>.
+                        </p>
+                    </div>
                 </div>
                 
-                <div id='slideContainer'>
-                    <div class='slide showing'>
-                        <img src="images/slides/slide1.JPG" height='360' width='480'>
-                    </div>
-                    
-                    <div class='slide'>
-                        <img src="images/slides/slide2.JPG" height='360' width='480'>        
-                    </div>
-                </div>
+                
 
             </div>
 
@@ -143,14 +138,18 @@
                 <div class='cardWrapper mt-1'>
                     <div class='card' data-aos='fade-left'>
                         <div>
-                            <img class='cardImg' src="images/slides/slide1.JPG" style='opacity: 0.8;'></img>
+                            <img class='cardImg' src="images/projPictures/sortingSS.png"></img>
                         </div>
                         
                         <div class='contentBox'>
-                            <h4 class='text-center'>This Portfolio</h4>
+                            <h4 class='text-center'>Sorting Algorithm Visualizer</h4>
                             <p>
-                                I built this site as a way to express myself and to be able to display my accomplishments in a visual manner.  
-                                I used the making of this site as a learning opportunity to teach myself how websites are created and maintained.
+                                This Sorting Algorithm Visualizer visualizes 2 algorithms, quick sort, and bubble sort. 
+                                For this project, React was used to render all the different components of the project, along with the Javascript library p5.js to animate
+                                the array of data. 
+                                <br><br>
+                                Throughout the creation of this project I learned more about data structures and specifically sorting algorithms,
+                                along with delving deeper into Javascript frameworks like React.
                             </p>
 
                             <div class='langBox container m-1'>
@@ -164,20 +163,138 @@
                                     <div class='col'>
                                         <img src='images/icons/languages/js.png' width='45' height='45'>
                                     </div>
+                                    <div class='col'>
+                                        <img src='images/icons/languages/react.png' width='45' height='45'>
+                                    </div>
                                 </div>
                             </div>
 
                         </div>
 
-                        <div class='buttons'>
-                            <a href='https://github.com/syed-ahm/portfolio' target='_blank'><button class='codeCardButton' type='button'>&lt;/&gt;code</button></a>
-                            <!-- <a  target='_blank' href='#'><button class='visitCardButton' type='button'>visit</button></a> -->
+                        <div>
+                            <a href='https://github.com/syed-ahm/sorting-algorithm-visualizer/' target='_blank'><button class='codeCardButton' type='button'>&lt;/&gt;code</button></a>
+                            <a href='https://syed-ahm.github.io/sorting-algorithm-visualizer/' target='_blank'><button class='visitCardButton' type='button'>visit</button></a>
                         </div>
                     </div>
                 </div>
 
-                
+                <div class='cardWrapper mt-1'>
+                    <div class='card' data-aos='fade-right'>
+                        <div>
+                            <img class='cardImg' src="images/projPictures/covidTrackerSS.png"></img>
+                        </div>
+                        
+                        <div class='contentBox'>
+                            <h4 class='text-center'>COVID-19 Cases Web Scraper</h4>
+                            <p>
+                                This project uses voice recognition to listen to a question regarding COVID-19 cases, and produces an appropriate answer using COVID-19 
+                                <a href='https://www.worldometers.info/coronavirus/' target='_blank' class='blueLink'>data</a>. 
+                                This web scraper was built in Python using python libraries such as, 
+                                Python RegEx(regular expressions), Python Text-To-Speech, and Python Speech Recognition. The web scraping was done via a 
+                                <a href='https://www.parsehub.com/' target='_blank' class='blueLink'>ParseHub</a> API. 
+                                <br><br>
+                                This project revealed to me the endless possibilies of voice recognition and web scraping, and how this type of automation can be utilized. 
+                            </p>
 
+                            <div class='langBox container m-1'>
+                                <div class='row'>
+                                    <div class='col'>
+                                        <img src='images/icons/languages/python.png' width='40' height='40'>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div>
+                            <a href='https://github.com/syed-ahm/covid-cases-web-scrapper' target='_blank'><button class='codeCardButton' type='button'>&lt;/&gt;code</button></a>
+                            <a href='https://youtu.be/9YcmDTMMA2w' target='_blank'><button class='visitCardButton' type='button'>visit</button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class='cardWrapper mt-1'>
+                    <div class='card' data-aos='fade-left'>
+                        <div>
+                            <img class='cardImg' src="images/projPictures/extensionSS.png"></img>
+                        </div>
+                        
+                        <div class='contentBox'>
+                            <h4 class='text-center'>Chrome Timer Extension</h4>
+                            <p>
+                                This chrome extension allows the user to create a simple timer from within chrome by inputting the desired time and starting the timer. 
+                                This extension was created using HTML, CSS, Javascript and jQuery.
+                                <br><br>
+                                I built this chrome extension because I wanted to make simple way to set a timer from within chrome. 
+                                However, from this experience I also got to learn about jQuery and how web extensions are built.
+                            </p>
+
+                            <div class='langBox container m-1'>
+                                <div class='row'>
+                                    <div class='col'>
+                                        <img src='images/icons/languages/html.png' width='45' height='45'>
+                                    </div>
+                                    <div class='col'>
+                                        <img src='images/icons/languages/css.png' width='45' height='45'>
+                                    </div>
+                                    <div class='col'>
+                                        <img src='images/icons/languages/js.png' width='45' height='45'>
+                                    </div>
+                                    <div class='col'>
+                                        <img src='images/icons/languages/jquery.png' width='45' height='45'>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div>
+                            <a href='https://github.com/syed-ahm/chrome-timer-extension' target='_blank'><button class='codeCardButton' type='button'>&lt;/&gt;code</button></a>
+                            <a href='https://chrome.google.com/webstore/detail/timer/dhiojdcabhbmeeoegebicdbfjciphgeb?authuser=1' target='_blank'><button class='visitCardButton' type='button'>visit</button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class='cardWrapper mt-1'>
+                    <div class='card' data-aos='fade-right'>
+                        <div>
+                            <img class='cardImg' src="images/projPictures/todoSS.png"></img>
+                        </div>
+                        
+                        <div class='contentBox'>
+                            <h4 class='text-center'>To-Do List</h4>
+                            <p>
+                                This is a simple to-do list in which a user can add or remove items from a list, along with marking them as complete. This project was built using React.
+                                <br><br>
+                                Throughout this project I focused on understanding the innerworkings of React and how a multitude of components can come together and create something much bigger. 
+                                I also used <a href='https://jsonplaceholder.typicode.com/' target='_blank' class='blueLink'>jsonplaceholder</a> to make requests to a fake REST api to simulate database manipulation and grabbing preset items from a database.
+                            </p>
+
+                            <div class='langBox container m-1'>
+                                <div class='row'>
+                                    <div class='col'>
+                                        <img src='images/icons/languages/html.png' width='45' height='45'>
+                                    </div>
+                                    <div class='col'>
+                                        <img src='images/icons/languages/css.png' width='45' height='45'>
+                                    </div>
+                                    <div class='col'>
+                                        <img src='images/icons/languages/js.png' width='45' height='45'>
+                                    </div>
+                                    <div class='col'>
+                                        <img src='images/icons/languages/react.png' width='45' height='45'>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div>
+                            <a href='https://github.com/syed-ahm/To-Do-List-App' target='_blank'><button class='codeCardButton' type='button'>&lt;/&gt;code</button></a>
+                            <a href='https://syed-ahm.github.io/To-Do-List-App/' target='_blank'><button class='visitCardButton' type='button'>visit</button></a>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <footer id='footer' class='bg-light'>

@@ -5,9 +5,9 @@ var nextButton1 = document.getElementById('nextButton1'),
 
 // Removes nextButton1 animation/delay so new animation can be added / allows scrolling after mainpage animations
 setTimeout(function() {
-    nextButton1.classList.remove('animate__bounceInDown', 'animate__delay-4s');
+    nextButton1.classList.remove('animate__bounceInDown', 'animate__delay-2s');
     document.getElementById('html').style.overflowY = 'scroll';
-}, 5000)
+}, 3000)
 
 
 
@@ -98,17 +98,6 @@ function projectScreenAnimations() {
     }, 2000);
 }
 
-
-// Controls slideshow by changing class on the images 
-var slides = document.querySelectorAll('#slideContainer .slide');
-var currentSlide = 0;
-var slideInterval = setInterval(nextSlide, 4000);
-
-function nextSlide() {
-    slides[currentSlide].className = 'slide';
-    currentSlide = (currentSlide+1)%slides.length;
-    slides[currentSlide].className = 'slide showing';
-}
 
 
 // initalize's animation on scroll
