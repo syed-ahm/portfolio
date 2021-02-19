@@ -965,7 +965,7 @@ html::-webkit-scrollbar {
 
 
 /* medium screens */
-@media screen and (min-width: 1024px) and (max-height: 950px) {
+@media screen and (min-width: 1024px) and (max-height: 965px) {
     /* about screen */
 
     #pic {
@@ -989,17 +989,6 @@ html::-webkit-scrollbar {
 
 
 /* tablets */
-@media screen and (min-width: 768px) and (max-height: 950px) {
-    /* about screen */
-
-    #pic {
-        width: 262px;
-        height: 352px;
-    }
-    
-  
-}
-
 @media screen and (min-width: 768px) and (max-height: 780px) {
     /* about screen */
 
